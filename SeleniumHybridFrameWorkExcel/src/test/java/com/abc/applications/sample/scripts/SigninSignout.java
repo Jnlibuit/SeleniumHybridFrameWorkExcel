@@ -3,8 +3,8 @@ package com.abc.applications.sample.scripts;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.abc.applications.sample.reuse.CommonFunctions;
 import com.abc.config.StartBrowser;
+import com.abc.reuse.CommonFunctions;
 import com.abc.wdcmds.ActionDriver;
 import com.codoid.products.fillo.Connection;
 import com.codoid.products.fillo.Fillo;
@@ -27,6 +27,7 @@ public class SigninSignout extends StartBrowser {
 
 		while(recordset.next()) 
 		{
+			cfs.NavigateToHomePage("https://www.amazon.com/");
 			cfs.Signin(recordset.getField("UserName"),recordset.getField("Password"));
 
 			//System.out.println(recordset.getField("UserName")+ "" +  recordset.getField("Password"));

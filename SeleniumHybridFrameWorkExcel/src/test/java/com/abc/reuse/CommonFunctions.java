@@ -1,4 +1,4 @@
-package com.abc.applications.sample.reuse;
+package com.abc.reuse;
 
 import org.openqa.selenium.WebDriver;
 
@@ -21,7 +21,7 @@ public class CommonFunctions {
 	{
 		StartBrowser.childTest = StartBrowser.parentTest.createNode( "Signin to Amazon");
 		
-		aDriver.navigateToApplication("https://www.amazon.com/");
+		//aDriver.navigateToApplication("https://www.amazon.com/");
 		aDriver.mouseHover(com.abc.applications.sample.objectrepository.HomePage.lnkAccount, "Account Menu");
 		//aDriver.click(com.abc.applications.sample.objectrepository.HomePage.lnkAccount, "Account Link");
 		aDriver.click(com.abc.applications.sample.objectrepository.AccountPage.btnSignin, "Sigin in button");	
