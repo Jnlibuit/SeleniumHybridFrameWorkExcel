@@ -49,10 +49,10 @@ public class ActionDriver
 
 		try {
 			driver.findElement(locator).click();
-			StartBrowser.childTest.pass("Successfully Navigated to :"+eleName);
+			StartBrowser.childTest.pass("Successfully Clicked :"+eleName);
 		}
 		catch(Exception e) {
-			StartBrowser.childTest.fail("Unable to Navigated to :"+eleName,
+			StartBrowser.childTest.fail("Unable to Click :"+eleName,
 					MediaEntityBuilder.createScreenCaptureFromBase64String(screenShot()).build());
 			StartBrowser.childTest.info(e);
 			throw e;
@@ -71,10 +71,10 @@ public class ActionDriver
 
 		try {
 			driver.findElement(locator).sendKeys(testData);
-			StartBrowser.childTest.pass("Successfully performed type action in : "+eleName + " With Data "+testData);
+			StartBrowser.childTest.pass("Successfully performed Type action in : "+eleName + " With Data "+testData);
 		}
 		catch(Exception e) {
-			StartBrowser.childTest.fail("Unable to perform type action in :"+eleName + " With Data "+testData,
+			StartBrowser.childTest.fail("Unable to perform Type action in :"+eleName + " With Data "+testData,
 					MediaEntityBuilder.createScreenCaptureFromBase64String(screenShot()).build());
 			StartBrowser.childTest.info(e);		
 			throw e;
@@ -88,10 +88,10 @@ public class ActionDriver
 			Actions a = new Actions(driver);
 			WebElement mo=driver.findElement(locator);
 			a.moveToElement(mo).build().perform();
-			StartBrowser.childTest.pass("Successfully performed mousehover on:"+eleName);
+			StartBrowser.childTest.pass("Successfully performed Mousehover on:"+eleName);
 		}
 		catch(Exception e) {
-			StartBrowser.childTest.fail("Unable to perform type action in : to :"+eleName,
+			StartBrowser.childTest.fail("Unable to perform Mousehover on :"+eleName,
 					MediaEntityBuilder.createScreenCaptureFromBase64String(screenShot()).build());
 			StartBrowser.childTest.info(e);		
 			throw e;
