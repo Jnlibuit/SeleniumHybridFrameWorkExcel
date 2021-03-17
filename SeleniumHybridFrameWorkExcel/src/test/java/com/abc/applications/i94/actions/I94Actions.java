@@ -16,14 +16,16 @@ public class I94Actions {
 		aDriver = new ActionDriver();
 	}
 
-	public void ApplyNow() throws Exception
+	public void ApplyNow(String firstName,String lastName) throws Exception
 	{
 		StartBrowser.childTest = StartBrowser.parentTest.createNode( "Apply Now");
 		aDriver.click(com.abc.applications.i94.or.I94.lnkAppForNewI94, "Apply For New I-94 Link");
 		aDriver.click(com.abc.applications.i94.or.I94.lnkApplyNow, "Apply Now");
 		aDriver.click(com.abc.applications.i94.or.I94.btnConsentContinue, "Consent & Continue");
 		aDriver.click(com.abc.applications.i94.or.I94.rbtnviaalandborder, "via a land border");
-		aDriver.type(com.abc.applications.i94.or.I94.txtFirstName, "xxxxxxx", "First Name");
+		aDriver.type(com.abc.applications.i94.or.I94.txtFirstName, firstName, "First Name");
+		aDriver.type(com.abc.applications.i94.or.I94.txtLastName, lastName, "Last Name");
+		
 		
 		/*
 		//aDriver.navigateToApplication("https://www.amazon.com/");

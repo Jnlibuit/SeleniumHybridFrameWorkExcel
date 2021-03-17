@@ -74,6 +74,9 @@ public class ActionDriver
 			StartBrowser.childTest.pass("Successfully performed Type action in : "+eleName + " With Data "+testData);
 		}
 		catch(Exception e) {
+			
+
+			
 			StartBrowser.childTest.fail("Unable to perform Type action in :"+eleName + " With Data "+testData,
 					MediaEntityBuilder.createScreenCaptureFromBase64String(screenShot()).build());
 			StartBrowser.childTest.info(e);		
@@ -102,6 +105,7 @@ public class ActionDriver
 
 	public String screenShot()
 	{
+		//return((TakesScreenshot)driver).getScreenshotAs(OutputType.BASE64);
 		return((TakesScreenshot)driver).getScreenshotAs(OutputType.BASE64);
 	}
 

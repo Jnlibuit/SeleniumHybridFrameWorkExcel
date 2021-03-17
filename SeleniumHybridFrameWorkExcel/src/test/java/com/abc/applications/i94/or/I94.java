@@ -14,4 +14,6 @@ public class I94 {
 	
 	public static By txtFirstName = By.xpath("//input[@id='firstName']");
 	
+	public static By txtLastName = By.xpath("//input[@id='lastName']");
+	
 }

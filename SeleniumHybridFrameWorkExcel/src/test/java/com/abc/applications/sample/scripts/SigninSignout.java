@@ -19,7 +19,7 @@ public class SigninSignout extends StartBrowser {
 		CommonFunctions cfs = new CommonFunctions();
 		Fillo f = new Fillo();
 
-		Connection con = (Connection) f.getConnection("TestData/Data.xlsx");
+		Connection con = (Connection) f.getConnection("TestData/I94-File-Upload-Template_v0311.xlsx");
 		String strQuery = "Select * from TC1";
 		Recordset recordset = con.executeQuery(strQuery);
 
