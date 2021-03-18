@@ -16,7 +16,7 @@ public class I94Actions {
 		aDriver = new ActionDriver();
 	}
 
-	public void ApplyNow(String firstName,String lastName) throws Exception
+	public void ApplyNow(String firstName,String lastName,String birthDay) throws Exception
 	{
 		StartBrowser.childTest = StartBrowser.parentTest.createNode( "Apply Now");
 		aDriver.click(com.abc.applications.i94.or.I94.lnkAppForNewI94, "Apply For New I-94 Link");
@@ -25,6 +25,7 @@ public class I94Actions {
 		aDriver.click(com.abc.applications.i94.or.I94.rbtnviaalandborder, "via a land border");
 		aDriver.type(com.abc.applications.i94.or.I94.txtFirstName, firstName, "First Name");
 		aDriver.type(com.abc.applications.i94.or.I94.txtLastName, lastName, "Last Name");
+		aDriver.type(com.abc.applications.i94.or.I94.txtBirthDay, birthDay, "Birth Day");
 		
 		
 		/*

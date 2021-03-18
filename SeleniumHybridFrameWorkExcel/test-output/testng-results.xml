@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="27076" started-at="2021-03-17T12:53:47Z" finished-at="2021-03-17T12:54:14Z">
+  <suite name="Default suite" duration-ms="25602" started-at="2021-03-18T17:05:22Z" finished-at="2021-03-18T17:05:48Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27076" started-at="2021-03-17T12:53:47Z" finished-at="2021-03-17T12:54:14Z">
+    <test name="Default test" duration-ms="25602" started-at="2021-03-18T17:05:22Z" finished-at="2021-03-18T17:05:48Z">
       <class name="com.abc.applications.i94.scripts.ApplyForNewI94">
-        <test-method status="PASS" signature="generateReport()[pri:0, instance:com.abc.applications.i94.scripts.ApplyForNewI94@77cd7a0]" name="generateReport" is-config="true" duration-ms="433" started-at="2021-03-17T08:53:47Z" finished-at="2021-03-17T08:53:48Z">
+        <test-method status="PASS" signature="generateReport()[pri:0, instance:com.abc.applications.i94.scripts.ApplyForNewI94@5442a311]" name="generateReport" is-config="true" duration-ms="323" started-at="2021-03-18T13:05:22Z" finished-at="2021-03-18T13:05:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.abc.applications.i94.scripts.ApplyForNewI94@77cd7a0]" name="beforeClass" is-config="true" duration-ms="3745" started-at="2021-03-17T08:53:48Z" finished-at="2021-03-17T08:53:51Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.abc.applications.i94.scripts.ApplyForNewI94@5442a311]" name="beforeClass" is-config="true" duration-ms="4172" started-at="2021-03-18T13:05:22Z" finished-at="2021-03-18T13:05:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="methodName(java.lang.reflect.Method)[pri:0, instance:com.abc.applications.i94.scripts.ApplyForNewI94@77cd7a0]" name="methodName" is-config="true" duration-ms="8" started-at="2021-03-17T08:53:51Z" finished-at="2021-03-17T08:53:51Z">
+        <test-method status="PASS" signature="methodName(java.lang.reflect.Method)[pri:0, instance:com.abc.applications.i94.scripts.ApplyForNewI94@5442a311]" name="methodName" is-config="true" duration-ms="6" started-at="2021-03-18T13:05:27Z" finished-at="2021-03-18T13:05:27Z">
           <params>
             <param index="0">
               <value>
@@ -26,11 +26,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodName -->
-        <test-method status="PASS" signature="testApplyForNewI94()[pri:0, instance:com.abc.applications.i94.scripts.ApplyForNewI94@77cd7a0]" name="testApplyForNewI94" duration-ms="21348" started-at="2021-03-17T08:53:51Z" finished-at="2021-03-17T08:54:13Z">
+        <test-method status="PASS" signature="testApplyForNewI94()[pri:0, instance:com.abc.applications.i94.scripts.ApplyForNewI94@5442a311]" name="testApplyForNewI94" duration-ms="19558" started-at="2021-03-18T13:05:27Z" finished-at="2021-03-18T13:05:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testApplyForNewI94 -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.abc.applications.i94.scripts.ApplyForNewI94@77cd7a0]" name="afterClass" is-config="true" duration-ms="1507" started-at="2021-03-17T08:54:13Z" finished-at="2021-03-17T08:54:14Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.abc.applications.i94.scripts.ApplyForNewI94@5442a311]" name="afterClass" is-config="true" duration-ms="1520" started-at="2021-03-18T13:05:46Z" finished-at="2021-03-18T13:05:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

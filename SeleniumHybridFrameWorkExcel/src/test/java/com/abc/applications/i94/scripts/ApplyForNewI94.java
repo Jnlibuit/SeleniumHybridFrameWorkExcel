@@ -20,15 +20,15 @@ public class ApplyForNewI94 extends StartBrowser {
 		Recordset recordset = con.executeQuery(strQuery);
 						
 		
-		  CommonFunctions cfs = new CommonFunctions();
+		 CommonFunctions cfs = new CommonFunctions();
 		  
-		  I94Actions i94a = new I94Actions ();
+		 I94Actions i94a = new I94Actions ();
 		 
 		  while(recordset.next()){
 			  
 			  cfs.NavigateToHomePage("https://i94.cbp.dhs.gov/I94/#/home");
 				 
-			  i94a.ApplyNow(recordset.getField("First Name"),recordset.getField("Last Name"));
+			  i94a.ApplyNow(recordset.getField("First Name"),recordset.getField("Last Name"),recordset.getField("Birth Day"));
 			  
 			  
 			  //cfs.AccountMenu();

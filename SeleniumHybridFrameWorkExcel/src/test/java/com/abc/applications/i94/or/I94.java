@@ -16,4 +16,11 @@ public class I94 {
 	
 	public static By txtLastName = By.xpath("//input[@id='lastName']");
 	
+	public static By txtBirthDay = By.xpath("//input[@id='birthDay']");
+	
+	public static By txtBirthMo = By.xpath("//select[@id='birthMonth']");
+	
+	public static By txtBirthYear = By.xpath("//input[@id='birthYear']");
+	
+	
 }
