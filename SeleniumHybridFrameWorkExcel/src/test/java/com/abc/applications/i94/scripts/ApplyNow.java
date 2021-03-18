@@ -9,9 +9,9 @@ import com.codoid.products.fillo.Connection;
 import com.codoid.products.fillo.Fillo;
 import com.codoid.products.fillo.Recordset;
 
-public class ApplyForNewI94 extends StartBrowser {
+public class ApplyNow extends StartBrowser {
 	@Test
-	  public void testApplyForNewI94() throws Exception 
+	  public void testApplyNow() throws Exception 
 	  {
 		Fillo g = new Fillo();
 		
