@@ -3,15 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.abc.applications.i94.scripts.ApplyForNewI94">
+      <class name="com.abc.applications.i94.scripts.GroupUpload">
         <methods>
           <include name="methodName"/>
-          <include name="testApplyForNewI94"/>
           <include name="afterClass"/>
           <include name="beforeClass"/>
+          <include name="testGroupUpload"/>
           <include name="generateReport"/>
         </methods>
-      </class> <!-- com.abc.applications.i94.scripts.ApplyForNewI94 -->
+      </class> <!-- com.abc.applications.i94.scripts.GroupUpload -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
