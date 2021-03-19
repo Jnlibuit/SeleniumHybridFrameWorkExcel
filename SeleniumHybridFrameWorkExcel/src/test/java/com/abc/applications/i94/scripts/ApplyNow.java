@@ -28,7 +28,7 @@ public class ApplyNow extends StartBrowser {
 			  
 			  cfs.NavigateToHomePage("https://i94.cbp.dhs.gov/I94/#/home");
 				 
-			  i94a.ApplyNow(recordset.getField("First Name"),recordset.getField("Last Name"),recordset.getField("Birth Day"));
+			  i94a.ApplyNow(recordset.getField("First Name"),recordset.getField("Last Name"),recordset.getField("Birth Day"),recordset.getField("Birth Month"),recordset.getField("Birth Year"),recordset.getField("Document Number"),recordset.getField("Passport Country of Issue"));
 			  
 			  
 			  //cfs.AccountMenu();

@@ -24,6 +24,20 @@ public class I94 {
 	
 	public static By txtBirthYear = By.xpath("//input[@id='birthYear']");
 	
+	public static By rbtgendermale = By.xpath("//body/div[1]/section[1]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/span[1]/div[8]/div[1]/div[4]/div[2]/div[1]/div[1]/label[1]/span[1]");
+	
+	//public static By rbtgenderfemale = By.xpath("//body/div[1]/section[1]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/span[1]/div[8]/div[1]/div[4]/div[2]/div[1]/div[2]/label[1]/span[1]");
+	
+	//public static By rbtgenderother = By.xpath("//body/div[1]/section[1]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/span[1]/div[8]/div[1]/div[4]/div[2]/div[1]/div[3]/label[1]/span[1]");
+	
+	public static By rbtpassport = By.xpath("//body/div[1]/section[1]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/span[1]/div[8]/div[1]/div[7]/div[1]/div[1]/label[1]/span[1]");
+	
+	public static By txtPassportNumber = By.xpath("//input[@id='passportNumber']");
+	
+	public static By txtPassportCountry = By.xpath("//select[@id='passportCountry']");
+	
+	//public static By rbtbcc = By.xpath("//body/div[1]/section[1]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/span[1]/div[8]/div[1]/div[7]/div[1]/div[2]/label[1]/span[1]");
+	
 	public static By txtGroupFirstName = By.xpath("//input[@id='groupContactFirstName']");
 	
 	public static By txtGroupLastName = By.xpath("//input[@id='groupContactLastName']");

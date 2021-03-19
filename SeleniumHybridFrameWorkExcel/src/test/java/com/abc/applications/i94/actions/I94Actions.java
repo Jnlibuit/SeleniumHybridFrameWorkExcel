@@ -16,7 +16,7 @@ public class I94Actions {
 		aDriver = new ActionDriver();
 	}
 
-	public void ApplyNow(String firstName,String lastName,String birthDay) throws Exception
+	public void ApplyNow(String firstName,String lastName,String birthDay,String birthMonth,String birthYear,String documentNumber,String passportCountry) throws Exception
 	{
 		StartBrowser.childTest = StartBrowser.parentTest.createNode( "Apply Now");
 		aDriver.click(com.abc.applications.i94.or.I94.lnkAppForNewI94, "Apply For New I-94 Link");
@@ -26,6 +26,16 @@ public class I94Actions {
 		aDriver.type(com.abc.applications.i94.or.I94.txtFirstName, firstName, "First Name");
 		aDriver.type(com.abc.applications.i94.or.I94.txtLastName, lastName, "Last Name");
 		aDriver.type(com.abc.applications.i94.or.I94.txtBirthDay, birthDay, "Birth Day");
+		aDriver.type(com.abc.applications.i94.or.I94.txtBirthMo, birthMonth, "Birth Month");
+		aDriver.type(com.abc.applications.i94.or.I94.txtBirthYear, birthYear, "Birth Year");
+		aDriver.click(com.abc.applications.i94.or.I94.rbtgendermale, "Gender Male");
+		//aDriver.click(com.abc.applications.i94.or.I94.rbtgenderfemale, "Gender Female");
+		//aDriver.click(com.abc.applications.i94.or.I94.rbtgenderother, "Gender other");
+		aDriver.click(com.abc.applications.i94.or.I94.rbtpassport, "Passport");
+		aDriver.type(com.abc.applications.i94.or.I94.txtPassportNumber, documentNumber, "Document Number");
+		aDriver.type(com.abc.applications.i94.or.I94.txtPassportCountry, passportCountry, "Passport Country of Issue");
+		//aDriver.click(com.abc.applications.i94.or.I94.rbtbcc, "BCC");
+		
 		
 		
 		/*
