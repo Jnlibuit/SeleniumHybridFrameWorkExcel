@@ -52,5 +52,7 @@ public class I94 {
 	
 	public static By btnCreateGroup = By.xpath("//button[contains(text(),'YES, CREATE GROUP')]");
 	
+	public static By btnChooseExcelFile = By.xpath("//input[@id='importApplications']");
+	
 	
 }

@@ -66,6 +66,9 @@ public class I94Actions {
 		aDriver.type(com.abc.applications.i94.or.I94.txtGroupConfirmEmailAddress, emailAddress, "Confirm Email Address");
 		aDriver.click(com.abc.applications.i94.or.I94.btnSubmit, "Submit");
 		aDriver.click(com.abc.applications.i94.or.I94.btnCreateGroup, "YES, CREATE A GROUP");
+		aDriver.click(com.abc.applications.i94.or.I94.btnChooseExcelFile, "CHOOSE EXCEL FILE");
+		
+		
 		
 		
 		//aDriver.click(com.abc.applications.i94.or.I94.rbtnviaalandborder, "via a land border");
