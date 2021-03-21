@@ -51,12 +51,12 @@ public class I94Actions {
 		*/
 		
 		
-		Thread.sleep(2000);
+		//Thread.sleep(2000);
 	}
 	
 	public void GroupUpload(String firstName,String lastName,String emailAddress) throws Exception
 	{
-		StartBrowser.childTest = StartBrowser.parentTest.createNode( "Apply Now");
+		StartBrowser.childTest = StartBrowser.parentTest.createNode( "Group Upload");
 		aDriver.click(com.abc.applications.i94.or.I94.lnkAppForNewI94, "Apply For New I-94 Link");
 		aDriver.click(com.abc.applications.i94.or.I94.lnkGroupUpload, "Group Upload");
 		aDriver.click(com.abc.applications.i94.or.I94.btnConsentContinue, "Consent & Continue");
@@ -64,6 +64,10 @@ public class I94Actions {
 		aDriver.type(com.abc.applications.i94.or.I94.txtGroupLastName, lastName, "Last Name");
 		aDriver.type(com.abc.applications.i94.or.I94.txtGroupEmailAddress, emailAddress, "Email Address");
 		aDriver.type(com.abc.applications.i94.or.I94.txtGroupConfirmEmailAddress, emailAddress, "Confirm Email Address");
+		aDriver.click(com.abc.applications.i94.or.I94.btnSubmit, "Submit");
+		aDriver.click(com.abc.applications.i94.or.I94.btnCreateGroup, "YES, CREATE A GROUP");
+		
+		
 		//aDriver.click(com.abc.applications.i94.or.I94.rbtnviaalandborder, "via a land border");
 		//aDriver.type(com.abc.applications.i94.or.I94.txtFirstName, firstName, "First Name");
 		//aDriver.type(com.abc.applications.i94.or.I94.txtLastName, lastName, "Last Name");

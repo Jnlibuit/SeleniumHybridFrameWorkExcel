@@ -9,9 +9,9 @@ import com.codoid.products.fillo.Connection;
 import com.codoid.products.fillo.Fillo;
 import com.codoid.products.fillo.Recordset;
 
-public class GroupUpload extends StartBrowser{
+public class I94GroupUpload extends StartBrowser{
 	@Test
-	  public void testGroupUpload() throws Exception 
+	  public void I94testGroupUpload() throws Exception 
 	  {
 		Fillo g = new Fillo();
 		

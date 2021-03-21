@@ -46,10 +46,11 @@ public class I94 {
 	
 	public static By txtGroupConfirmEmailAddress = By.xpath("//input[@id='groupConfirmContactEmail']");
 	
+// Group Upload
 	
+	public static By btnSubmit = By.xpath("//input[@id='nextButton']");	
 	
-	
-
+	public static By btnCreateGroup = By.xpath("//button[contains(text(),'YES, CREATE GROUP')]");
 	
 	
 }
