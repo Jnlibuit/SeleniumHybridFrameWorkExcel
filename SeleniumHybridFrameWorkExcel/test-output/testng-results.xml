@@ -2,20 +2,38 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Default suite" duration-ms="30300" started-at="2021-03-22T17:56:22Z" finished-at="2021-03-22T17:56:52Z">
+=======
+  <suite started-at="2021-03-22T14:17:12 EDT" name="Default suite" finished-at="2021-03-22T14:17:39 EDT" duration-ms="27110">
+>>>>>>> branch 'master' of https://github.com/Jnlibuit/SeleniumHybridFrameWorkExcel
     <groups>
     </groups>
+<<<<<<< HEAD
     <test name="Default test" duration-ms="30300" started-at="2021-03-22T17:56:22Z" finished-at="2021-03-22T17:56:52Z">
       <class name="com.abc.applications.i94.scripts.I94ApplyNowNilo">
         <test-method status="PASS" signature="generateReport()[pri:0, instance:com.abc.applications.i94.scripts.I94ApplyNowNilo@5442a311]" name="generateReport" is-config="true" duration-ms="167" started-at="2021-03-22T13:56:22Z" finished-at="2021-03-22T13:56:22Z">
+=======
+    <test started-at="2021-03-22T14:17:12 EDT" name="Default test" finished-at="2021-03-22T14:17:39 EDT" duration-ms="27110">
+      <class name="com.abc.applications.i94.scripts.I94ApplyNow">
+        <test-method is-config="true" signature="generateReport()[pri:0, instance:com.abc.applications.i94.scripts.I94ApplyNow@6a370f4]" started-at="2021-03-22T14:17:12 EDT" name="generateReport" finished-at="2021-03-22T14:17:12 EDT" duration-ms="134" status="PASS">
+>>>>>>> branch 'master' of https://github.com/Jnlibuit/SeleniumHybridFrameWorkExcel
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.abc.applications.i94.scripts.I94ApplyNowNilo@5442a311]" name="beforeClass" is-config="true" duration-ms="2039" started-at="2021-03-22T13:56:22Z" finished-at="2021-03-22T13:56:24Z">
+=======
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.abc.applications.i94.scripts.I94ApplyNow@6a370f4]" started-at="2021-03-22T14:17:12 EDT" name="beforeClass" finished-at="2021-03-22T14:17:14 EDT" duration-ms="1590" status="PASS">
+>>>>>>> branch 'master' of https://github.com/Jnlibuit/SeleniumHybridFrameWorkExcel
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="methodName(java.lang.reflect.Method)[pri:0, instance:com.abc.applications.i94.scripts.I94ApplyNowNilo@5442a311]" name="methodName" is-config="true" duration-ms="18" started-at="2021-03-22T13:56:24Z" finished-at="2021-03-22T13:56:24Z">
+=======
+        <test-method is-config="true" signature="methodName(java.lang.reflect.Method)[pri:0, instance:com.abc.applications.i94.scripts.I94ApplyNow@6a370f4]" started-at="2021-03-22T14:17:14 EDT" name="methodName" finished-at="2021-03-22T14:17:14 EDT" duration-ms="3" status="PASS">
+>>>>>>> branch 'master' of https://github.com/Jnlibuit/SeleniumHybridFrameWorkExcel
           <params>
             <param index="0">
               <value>
@@ -26,11 +44,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodName -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="testI94ApplyNow()[pri:0, instance:com.abc.applications.i94.scripts.I94ApplyNowNilo@5442a311]" name="testI94ApplyNow" duration-ms="26980" started-at="2021-03-22T13:56:24Z" finished-at="2021-03-22T13:56:51Z">
+=======
+        <test-method signature="testI94ApplyNow()[pri:0, instance:com.abc.applications.i94.scripts.I94ApplyNow@6a370f4]" started-at="2021-03-22T14:17:14 EDT" name="testI94ApplyNow" finished-at="2021-03-22T14:17:38 EDT" duration-ms="24263" status="PASS">
+>>>>>>> branch 'master' of https://github.com/Jnlibuit/SeleniumHybridFrameWorkExcel
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testI94ApplyNow -->
+<<<<<<< HEAD
         <test-method status="PASS" signature="afterClass()[pri:0, instance:com.abc.applications.i94.scripts.I94ApplyNowNilo@5442a311]" name="afterClass" is-config="true" duration-ms="1094" started-at="2021-03-22T13:56:51Z" finished-at="2021-03-22T13:56:52Z">
+=======
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.abc.applications.i94.scripts.I94ApplyNow@6a370f4]" started-at="2021-03-22T14:17:38 EDT" name="afterClass" finished-at="2021-03-22T14:17:39 EDT" duration-ms="1087" status="PASS">
+>>>>>>> branch 'master' of https://github.com/Jnlibuit/SeleniumHybridFrameWorkExcel
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

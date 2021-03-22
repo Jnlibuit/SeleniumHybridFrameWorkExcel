@@ -21,7 +21,7 @@ public class I94Actions {
 		aDriver = new ActionDriver();
 	}
 
-	public void ApplyNow(String firstName,String lastName,String birthDay,String birthMonth,String birthYear,String Gender,String documentNumber,String passportCountry) throws Exception
+	public void ApplyNow(String firstName,String lastName,String birthDay,String birthMonth,String birthYear,String Gender,String documentNumber,String passportCountry,String issueDay,String issueMonth,String issueYear,String expirationDay,String expirationMonth,String expirationYear,String visaIssuanceCountry,String visaNumber,String visaIssueDay,String visaIssueMonth,String visaIssueYear) throws Exception
 	{
 		StartBrowser.childTest = StartBrowser.parentTest.createNode( "Apply Now");
 		aDriver.click(com.abc.applications.i94.or.I94.lnkAppForNewI94, "Apply For New I-94 Link");
@@ -45,6 +45,19 @@ public class I94Actions {
 		aDriver.click(com.abc.applications.i94.or.I94.rbtpassport, "Passport");
 		aDriver.type(com.abc.applications.i94.or.I94.txtPassportNumber, documentNumber, "Document Number");
 		aDriver.type(com.abc.applications.i94.or.I94.txtPassportCountry, passportCountry, "Passport Country of Issue");
+		aDriver.type(com.abc.applications.i94.or.I94.txtPassportIssueDay, issueDay, "Passport Issue Day");
+		aDriver.type(com.abc.applications.i94.or.I94.txtPassportIssueMonth, issueMonth, "Passport Issue Month");
+		aDriver.type(com.abc.applications.i94.or.I94.txtPassportIssueYear, issueYear, "Passport Issue Year");
+		aDriver.type(com.abc.applications.i94.or.I94.txtPassportExpirationDay, expirationDay, "Passport Expiration Day");
+		aDriver.type(com.abc.applications.i94.or.I94.txtPassportExpirationMonth, expirationMonth, "Passport Expiration Month");
+		aDriver.type(com.abc.applications.i94.or.I94.txtPassportExpirationYear, expirationYear, "Passport Expiration Year");
+		aDriver.type(com.abc.applications.i94.or.I94.txtVisaCountry, visaIssuanceCountry,"Visa Country of Issuance");
+		aDriver.type(com.abc.applications.i94.or.I94.txtVisaNumber, visaNumber, "Visa Number");
+		aDriver.type(com.abc.applications.i94.or.I94.txtVisaIssueDay, visaIssueDay, "Visa Issue Day");
+		aDriver.type(com.abc.applications.i94.or.I94.txtVisaIssueMonth, visaIssueMonth, "Visa Issue Month");
+		aDriver.type(com.abc.applications.i94.or.I94.txtVisaIssueYear, visaIssueYear, "Visa Issue Year");
+		aDriver.click(com.abc.applications.i94.or.I94.btnNext, "Next");
+		//		//aDriver.type(com.abc.applications.i94.or.I94.txtBirthYear, issueYear, "Passport Issue Year");
 		//aDriver.click(com.abc.applications.i94.or.I94.rbtbcc, "BCC");
 
 
