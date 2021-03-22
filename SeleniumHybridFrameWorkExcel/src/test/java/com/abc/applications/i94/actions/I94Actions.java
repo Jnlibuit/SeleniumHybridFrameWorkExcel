@@ -1,13 +1,11 @@
 package com.abc.applications.i94.actions;
 
-import java.awt.Robot;
-import java.awt.datatransfer.StringSelection;
-
 import org.openqa.selenium.WebDriver;
 
 import com.abc.config.StartBrowser;
 import com.abc.reuse.CommonFunctions;
 import com.abc.wdcmds.ActionDriver;
+import com.aventstack.extentreports.MediaEntityBuilder;
 
 
 public class I94Actions {
@@ -23,6 +21,8 @@ public class I94Actions {
 
 	public void ApplyNow(String firstName,String lastName,String birthDay,String birthMonth,String birthYear,String Gender,String documentNumber,String passportCountry,String issueDay,String issueMonth,String issueYear,String expirationDay,String expirationMonth,String expirationYear,String visaIssuanceCountry,String visaNumber,String visaIssueDay,String visaIssueMonth,String visaIssueYear) throws Exception
 	{
+		CommonFunctions cfs = new CommonFunctions();
+		
 		StartBrowser.childTest = StartBrowser.parentTest.createNode( "Apply Now");
 		aDriver.click(com.abc.applications.i94.or.I94.lnkAppForNewI94, "Apply For New I-94 Link");
 		aDriver.click(com.abc.applications.i94.or.I94.lnkApplyNow, "Apply Now");
@@ -52,6 +52,11 @@ public class I94Actions {
 		aDriver.type(com.abc.applications.i94.or.I94.txtVisaIssueMonth, visaIssueMonth, "Visa Issue Month");
 		aDriver.type(com.abc.applications.i94.or.I94.txtVisaIssueYear, visaIssueYear, "Visa Issue Year");
 		aDriver.click(com.abc.applications.i94.or.I94.btnNext, "Next");
+		
+		
+		
+		cfs.screenPrint();
+		
 		//		//aDriver.type(com.abc.applications.i94.or.I94.txtBirthYear, issueYear, "Passport Issue Year");
 		//aDriver.click(com.abc.applications.i94.or.I94.rbtbcc, "BCC");
 
@@ -166,8 +171,10 @@ public class I94Actions {
 
 		cfs.UploadFile("C:\\Users\\nlibu\\git\\SeleniumHybridFrameWorkExcel\\SeleniumHybridFrameWorkExcel\\TestData\\I94-File-Upload-Template_v0311.xlsx");
 
-
-
+		cfs.screenPrint();
+		//String screenshotPath = CommonFunctions.capture(driver, "screenshotForExtetReport");
+		//StartBrowser.childTest.pass("Print Last Page",
+		//		MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
 
 		//aDriver.click(com.abc.applications.i94.or.I94.rbtnviaalandborder, "via a land border");
 		//aDriver.type(com.abc.applications.i94.or.I94.txtFirstName, firstName, "First Name");

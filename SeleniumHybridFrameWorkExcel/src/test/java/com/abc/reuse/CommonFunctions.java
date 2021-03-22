@@ -13,12 +13,13 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
 import com.abc.config.StartBrowser;
-import com.abc.wdcmds.ActionDriver; 
+import com.abc.wdcmds.ActionDriver;
+import com.aventstack.extentreports.MediaEntityBuilder; 
 
 
 public class CommonFunctions {
 
-	public WebDriver driver;
+	public static WebDriver driver;
 	public static ActionDriver aDriver;
 
 	public CommonFunctions()
@@ -77,7 +78,7 @@ public class CommonFunctions {
 
 		//Thread.sleep(1000);
 	}
-	
+
 	public static void Gender(String gender ) throws Exception
 	{
 		String gendera = new String(gender);
@@ -85,40 +86,47 @@ public class CommonFunctions {
 		String male = new String("M");
 		String female = new String("F");
 		String other = new String("O");
-		
+
 		if (gendera.equals(male))
 		{
 			aDriver.click(com.abc.applications.i94.or.I94.rbtgendermale, "Gender Male");
-			
+
 
 		}
 		if (gendera.equals(female))
 		{
 			aDriver.click(com.abc.applications.i94.or.I94.rbtgenderfemale, "Gender Female");
-		
+
 		}
-		
+
 		if (gendera.equals(other))
 		{
 			aDriver.click(com.abc.applications.i94.or.I94.rbtgenderother, "Gender Other");
-		
+
 		}
-		
+
 		//public static By rbtgenderfemale = By.xpath("//body/div[1]/section[1]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/span[1]/div[8]/div[1]/div[4]/div[2]/div[1]/div[2]/label[1]/span[1]");
-		
+
 		//public static By rbtgenderother = By.xpath("//body/div[1]/section[1]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/span[1]/div[8]/div[1]/div[4]/div[2]/div[1]/div[3]/label[1]/span[1]");
 	}
 	public static String capture(WebDriver driver, String screenshotName) throws IOException 
 	{
 		//StartBrowser.childTest = StartBrowser.parentTest.createNode( "Navigate to Home Page");
 		TakesScreenshot ts=(TakesScreenshot) driver;
-		
+
 		File source = ts.getScreenshotAs(OutputType.FILE);
 		String dest=System.getProperty("user.dir")+"/ErrorScreenshot/"+screenshotName+".png";
 		File destination = new File(dest);
 		FileUtils.copyFile(source, destination);
-		
+
 		return dest;
+	}
+
+	public void screenPrint() throws IOException 
+	{
+		String screenshotPath = CommonFunctions.capture(driver, "screenshotForExtetReport");
+		StartBrowser.childTest.pass("Print Last Page",
+				MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
 	}
 	public void UploadFile(String filename ) throws Exception
 	{
