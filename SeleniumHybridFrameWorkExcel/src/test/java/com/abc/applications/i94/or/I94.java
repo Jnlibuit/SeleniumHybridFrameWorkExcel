@@ -36,6 +36,30 @@ public class I94 {
 	
 	public static By txtPassportCountry = By.xpath("//select[@id='passportCountry']");
 	
+	public static By txtPassportIssueDay = By.xpath("//input[@id='passportIssuanceDay']");
+	
+	public static By txtPassportIssueMonth = By.xpath("//select[@id='passportIssuanceMonth']");
+	
+	public static By txtPassportIssueYear = By.xpath("//input[@id='passportIssuanceYear']");
+	
+	public static By txtPassportExpirationDay = By.xpath("//input[@id='passportExpirationDay']");
+	
+	public static By txtPassportExpirationMonth = By.xpath("//select[@id='passportExpirationMonth']");
+	
+	public static By txtPassportExpirationYear = By.xpath("//input[@id='passportExpirationYear']");
+	
+	public static By txtVisaCountry = By.xpath("//select[@id='visaIssuanceCountry']");
+	
+	public static By txtVisaNumber = By.xpath("//input[@id='visaNumber']");
+	
+	public static By txtVisaIssueDay = By.xpath("//input[@id='visaIssuanceDay']");
+	
+	public static By txtVisaIssueMonth = By.xpath("//select[@id='visaIssuanceMonth']");
+	
+	public static By txtVisaIssueYear = By.xpath("//input[@id='visaIssuanceYear']");
+	
+	public static By btnNext = By.xpath("//input[@id='nextButton']");
+	
 	//public static By rbtbcc = By.xpath("//body/div[1]/section[1]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/span[1]/div[8]/div[1]/div[7]/div[1]/div[2]/label[1]/span[1]");
 	
 	public static By txtGroupFirstName = By.xpath("//input[@id='groupContactFirstName']");
