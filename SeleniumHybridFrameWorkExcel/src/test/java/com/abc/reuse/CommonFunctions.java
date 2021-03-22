@@ -19,7 +19,7 @@ import com.abc.wdcmds.ActionDriver;
 public class CommonFunctions {
 
 	public WebDriver driver;
-	public ActionDriver aDriver;
+	public static ActionDriver aDriver;
 
 	public CommonFunctions()
 	{
@@ -76,6 +76,37 @@ public class CommonFunctions {
 
 
 		//Thread.sleep(1000);
+	}
+	
+	public static void Gender(String gender ) throws Exception
+	{
+		String gendera = new String(gender);
+
+		String male = new String("M");
+		String female = new String("F");
+		String other = new String("O");
+		
+		if (gendera.equals(male))
+		{
+			aDriver.click(com.abc.applications.i94.or.I94.rbtgendermale, "Gender Male");
+			
+
+		}
+		if (gendera.equals(female))
+		{
+			aDriver.click(com.abc.applications.i94.or.I94.rbtgenderfemale, "Gender Female");
+		
+		}
+		
+		if (gendera.equals(other))
+		{
+			aDriver.click(com.abc.applications.i94.or.I94.rbtgenderother, "Gender Other");
+		
+		}
+		
+		//public static By rbtgenderfemale = By.xpath("//body/div[1]/section[1]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/span[1]/div[8]/div[1]/div[4]/div[2]/div[1]/div[2]/label[1]/span[1]");
+		
+		//public static By rbtgenderother = By.xpath("//body/div[1]/section[1]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/span[1]/div[8]/div[1]/div[4]/div[2]/div[1]/div[3]/label[1]/span[1]");
 	}
 	public static String capture(WebDriver driver, String screenshotName) throws IOException 
 	{

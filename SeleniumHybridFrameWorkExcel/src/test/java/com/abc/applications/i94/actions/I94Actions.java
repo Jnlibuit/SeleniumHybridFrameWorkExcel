@@ -33,13 +33,8 @@ public class I94Actions {
 		aDriver.type(com.abc.applications.i94.or.I94.txtBirthDay, birthDay, "Birth Day");
 		aDriver.type(com.abc.applications.i94.or.I94.txtBirthMo, birthMonth, "Birth Month");
 		aDriver.type(com.abc.applications.i94.or.I94.txtBirthYear, birthYear, "Birth Year");
-		//Gender(Gender);
-		//if (gender == "M")
-		//{
-		//	aDriver.click(com.abc.applications.i94.or.I94.rbtgendermale, "Gender Male");
-		//	System.out.println("This is M");
-		//}
-		aDriver.click(com.abc.applications.i94.or.I94.rbtgendermale, "Gender Male");
+		CommonFunctions.Gender(Gender);
+		//aDriver.click(com.abc.applications.i94.or.I94.rbtgendermale, "Gender Male");
 		//aDriver.click(com.abc.applications.i94.or.I94.rbtgenderfemale, "Gender Female");
 		//aDriver.click(com.abc.applications.i94.or.I94.rbtgenderother, "Gender other");
 		aDriver.click(com.abc.applications.i94.or.I94.rbtpassport, "Passport");
@@ -90,13 +85,17 @@ public class I94Actions {
 		aDriver.type(com.abc.applications.i94.or.I94.txtBirthDay, birthDay, "Birth Day");
 		aDriver.type(com.abc.applications.i94.or.I94.txtBirthMo, birthMonth, "Birth Month");
 		aDriver.type(com.abc.applications.i94.or.I94.txtBirthYear, birthYear, "Birth Year");
-		//Gender(Gender);
+		CommonFunctions.Gender(Gender);
 		System.out.println("+++++++++");
 		System.out.println(Gender);
-		String a = Gender;
+		/*
+		System.out.println("+++++++++");
+		System.out.println(Gender);
+		String gender = new String(Gender);
+		String male = new String("M");
 		System.out.println("aaaaaa");
-		System.out.println(a);
-		if (a == "M")
+		//System.out.println(a);
+		if (male.equals(gender))
 		{
 			aDriver.click(com.abc.applications.i94.or.I94.rbtgendermale, "Gender Male");
 			System.out.println("This is M");
