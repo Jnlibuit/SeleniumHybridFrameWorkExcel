@@ -1,15 +1,21 @@
 package com.abc.applications.i94.actions;
 
+import java.awt.Robot;
+import java.awt.datatransfer.StringSelection;
+
 import org.openqa.selenium.WebDriver;
 
 import com.abc.config.StartBrowser;
+import com.abc.reuse.CommonFunctions;
 import com.abc.wdcmds.ActionDriver;
+import com.sun.glass.events.KeyEvent;
+
 
 public class I94Actions {
-	
+
 	public WebDriver driver;
 	public ActionDriver aDriver;
-	
+
 	public I94Actions()
 	{
 		driver = StartBrowser.driver;
@@ -35,9 +41,9 @@ public class I94Actions {
 		aDriver.type(com.abc.applications.i94.or.I94.txtPassportNumber, documentNumber, "Document Number");
 		aDriver.type(com.abc.applications.i94.or.I94.txtPassportCountry, passportCountry, "Passport Country of Issue");
 		//aDriver.click(com.abc.applications.i94.or.I94.rbtbcc, "BCC");
-		
-		
-		
+
+
+
 		/*
 		//aDriver.navigateToApplication("https://www.amazon.com/");
 		aDriver.mouseHover(com.abc.applications.sample.objectrepository.HomePage.lnkAccount, "Account Menu");
@@ -48,14 +54,17 @@ public class I94Actions {
 		aDriver.click(com.abc.applications.sample.objectrepository.SigninPage.btnContinue, "Continue button");
 		aDriver.type(com.abc.applications.sample.objectrepository.SigninPage.txtPassword, password, "Password");
 		aDriver.click(com.abc.applications.sample.objectrepository.SigninPage.btnSignIn, "Sign-In button");
-		*/
-		
-		
+		 */
+
+
 		//Thread.sleep(2000);
 	}
-	
+
 	public void GroupUpload(String firstName,String lastName,String emailAddress) throws Exception
 	{
+		
+		CommonFunctions cfs = new CommonFunctions();
+		
 		StartBrowser.childTest = StartBrowser.parentTest.createNode( "Group Upload");
 		aDriver.click(com.abc.applications.i94.or.I94.lnkAppForNewI94, "Apply For New I-94 Link");
 		aDriver.click(com.abc.applications.i94.or.I94.lnkGroupUpload, "Group Upload");
@@ -67,16 +76,19 @@ public class I94Actions {
 		aDriver.click(com.abc.applications.i94.or.I94.btnSubmit, "Submit");
 		aDriver.click(com.abc.applications.i94.or.I94.btnCreateGroup, "YES, CREATE A GROUP");
 		aDriver.click(com.abc.applications.i94.or.I94.btnChooseExcelFile, "CHOOSE EXCEL FILE");
+
 		
+		cfs.UploadFile("C:\\Users\\nlibu\\git\\SeleniumHybridFrameWorkExcel\\SeleniumHybridFrameWorkExcel\\TestData\\I94-File-Upload-Template_v0311.xlsx");
 		
+
 		
-		
+
 		//aDriver.click(com.abc.applications.i94.or.I94.rbtnviaalandborder, "via a land border");
 		//aDriver.type(com.abc.applications.i94.or.I94.txtFirstName, firstName, "First Name");
 		//aDriver.type(com.abc.applications.i94.or.I94.txtLastName, lastName, "Last Name");
 		//aDriver.type(com.abc.applications.i94.or.I94.txtBirthDay, birthDay, "Birth Day");
-		
-		
+
+
 		/*
 		//aDriver.navigateToApplication("https://www.amazon.com/");
 		aDriver.mouseHover(com.abc.applications.sample.objectrepository.HomePage.lnkAccount, "Account Menu");
@@ -87,9 +99,9 @@ public class I94Actions {
 		aDriver.click(com.abc.applications.sample.objectrepository.SigninPage.btnContinue, "Continue button");
 		aDriver.type(com.abc.applications.sample.objectrepository.SigninPage.txtPassword, password, "Password");
 		aDriver.click(com.abc.applications.sample.objectrepository.SigninPage.btnSignIn, "Sign-In button");
-		*/
-		
-		
+		 */
+
+
 		Thread.sleep(2000);
 	}
 }

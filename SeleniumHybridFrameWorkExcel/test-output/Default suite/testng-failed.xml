@@ -5,9 +5,9 @@
     <classes>
       <class name="com.abc.applications.i94.scripts.I94GroupUpload">
         <methods>
+          <include name="I94testGroupUpload"/>
           <include name="methodName"/>
           <include name="afterClass"/>
-          <include name="testGroupUpload"/>
           <include name="beforeClass"/>
           <include name="generateReport"/>
         </methods>

@@ -1,5 +1,15 @@
 package com.abc.reuse;
 
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
+import java.io.File;
+import java.io.IOException;
+
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
 import com.abc.config.StartBrowser;
@@ -10,17 +20,17 @@ public class CommonFunctions {
 
 	public WebDriver driver;
 	public ActionDriver aDriver;
-	
+
 	public CommonFunctions()
 	{
 		driver = StartBrowser.driver;
 		aDriver = new ActionDriver();
 	}
-	
+
 	public void Signin(String userName, String password) throws Exception
 	{
 		StartBrowser.childTest = StartBrowser.parentTest.createNode( "Signin to Amazon");
-		
+
 		//aDriver.navigateToApplication("https://www.amazon.com/");
 		aDriver.mouseHover(com.abc.applications.sample.objectrepository.HomePage.lnkAccount, "Account Menu");
 		//aDriver.click(com.abc.applications.sample.objectrepository.HomePage.lnkAccount, "Account Link");
@@ -32,39 +42,106 @@ public class CommonFunctions {
 		aDriver.click(com.abc.applications.sample.objectrepository.SigninPage.btnSignIn, "Sign-In button");
 		Thread.sleep(2000);
 	}
-	
+
 	public void AccountMenu() throws Exception
 	{
 		StartBrowser.childTest = StartBrowser.parentTest.createNode( "However to Account Menu");
 		aDriver.mouseHover(com.abc.applications.sample.objectrepository.HomePage.lnkAccount, "Account Menu");
-		
-		
-			
-		
+
+
+
+
 		//Thread.sleep(1000);
 	}
-	
+
 	public void Signout() throws Exception
 	{
 		StartBrowser.childTest = StartBrowser.parentTest.createNode( "However to Account Menu");
-		
+
 		aDriver.mouseHover(com.abc.applications.sample.objectrepository.HomePage.lnkAccount, "Account Menu");
 		aDriver.click(com.abc.applications.sample.objectrepository.AccountPage.lnkSignout, "Signout Link");
-		
-			
-		
+
+
+
 		//Thread.sleep(1000);
 	}
-	
+
 	public void NavigateToHomePage(String url ) throws Exception
 	{
 		StartBrowser.childTest = StartBrowser.parentTest.createNode( "Navigate to Home Page");
 		aDriver.navigateToApplication(url);
-		
+
 		//aDriver.mouseHover(com.abc.applications.sample.objectrepository.HomePage.lnkAccount, "Account Menu");
+
+
+
+		//Thread.sleep(1000);
+	}
+	public static String getScreenshot(WebDriver driver) 
+	{
+		//StartBrowser.childTest = StartBrowser.parentTest.createNode( "Navigate to Home Page");
+		TakesScreenshot ts=(TakesScreenshot) driver;
 		
+		File src=ts.getScreenshotAs(OutputType.FILE);
+		String path=System.getProperty("user.dir")+"/Screenshot/"+System.currentTimeMillis()+".png";
+		File destination = new File(path);
+		try
+		{
+			FileUtils.copyFile(src,  destination);
 			
+		} catch(IOException e)
+		{
+			System.out.println("Captured Failed "+e.getMessage());
+		}
 		
-		Thread.sleep(1000);
+		return path;
+	}
+	public void UploadFile(String filename ) throws Exception
+	{
+		//StartBrowser.childTest = StartBrowser.parentTest.createNode( "Upload File");
+
+		Thread.sleep(500);
+		//Use robot=new Robot class to upload file
+		Robot robot = new Robot();
+		//Store the path of the file to be uploaded using StringSelection class object
+
+
+		StringSelection filepath = new StringSelection (filename);
+
+
+		//System.out.println(filename);
+
+		//Copy above path tom clipboard
+
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(filepath, null);
+
+		//Now press CTRL
+		robot.keyPress(KeyEvent.VK_CONTROL);
+		Thread.sleep(500);
+
+		//Press V
+		robot.keyPress(KeyEvent.VK_V);
+		Thread.sleep(500);
+
+		//Release V
+		robot.keyRelease(KeyEvent.VK_V);
+		Thread.sleep(500);
+
+		//Release CTRL
+		robot.keyRelease(KeyEvent.VK_CONTROL);
+		Thread.sleep(500);
+
+		//Release V
+		robot.keyPress(KeyEvent.VK_CANCEL);
+		Thread.sleep(500);
+
+		//Release CTRL
+		robot.keyRelease(KeyEvent.VK_CANCEL);
+		Thread.sleep(500);
+
+
+
+
+		//Thread.sleep(1000);
 	}
 }

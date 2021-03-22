@@ -54,6 +54,7 @@ public class ActionDriver
 		catch(Exception e) {
 			StartBrowser.childTest.fail("Unable to Click :"+eleName,
 					MediaEntityBuilder.createScreenCaptureFromBase64String(screenShot()).build());
+
 			StartBrowser.childTest.info(e);
 			throw e;
 
@@ -74,9 +75,9 @@ public class ActionDriver
 			StartBrowser.childTest.pass("Successfully performed Type action in : "+eleName + " With Data "+testData);
 		}
 		catch(Exception e) {
-			
 
-			
+
+
 			StartBrowser.childTest.fail("Unable to perform Type action in :"+eleName + " With Data "+testData,
 					MediaEntityBuilder.createScreenCaptureFromBase64String(screenShot()).build());
 			StartBrowser.childTest.info(e);		
