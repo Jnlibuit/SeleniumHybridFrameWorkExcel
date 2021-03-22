@@ -77,24 +77,17 @@ public class CommonFunctions {
 
 		//Thread.sleep(1000);
 	}
-	public static String getScreenshot(WebDriver driver) 
+	public static String capture(WebDriver driver, String screenshotName) throws IOException 
 	{
 		//StartBrowser.childTest = StartBrowser.parentTest.createNode( "Navigate to Home Page");
 		TakesScreenshot ts=(TakesScreenshot) driver;
 		
-		File src=ts.getScreenshotAs(OutputType.FILE);
-		String path=System.getProperty("user.dir")+"/Screenshot/"+System.currentTimeMillis()+".png";
-		File destination = new File(path);
-		try
-		{
-			FileUtils.copyFile(src,  destination);
-			
-		} catch(IOException e)
-		{
-			System.out.println("Captured Failed "+e.getMessage());
-		}
+		File source = ts.getScreenshotAs(OutputType.FILE);
+		String dest=System.getProperty("user.dir")+"/ErrorScreenshot/"+screenshotName+".png";
+		File destination = new File(dest);
+		FileUtils.copyFile(source, destination);
 		
-		return path;
+		return dest;
 	}
 	public void UploadFile(String filename ) throws Exception
 	{

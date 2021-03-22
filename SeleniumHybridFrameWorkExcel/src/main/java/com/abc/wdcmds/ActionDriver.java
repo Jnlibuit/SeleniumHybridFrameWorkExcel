@@ -10,7 +10,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
 import com.abc.config.StartBrowser;
+import com.abc.reuse.CommonFunctions;
+import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.model.ScreenCapture;
+import com.aventstack.extentreports.model.Test;
 
 public class ActionDriver 
 {
@@ -32,7 +37,11 @@ public class ActionDriver
 		}
 		catch(Exception e) {
 			StartBrowser.childTest.fail("Unable to Navigated to :"+url,
+				
 					MediaEntityBuilder.createScreenCaptureFromBase64String(screenShot()).build());
+			
+			
+			
 			StartBrowser.childTest.info(e);
 			throw e;
 		}
@@ -52,10 +61,15 @@ public class ActionDriver
 			StartBrowser.childTest.pass("Successfully Clicked :"+eleName);
 		}
 		catch(Exception e) {
+			
+			String screenshotPath = CommonFunctions.capture(driver, "screenshotForExtetReport");
 			StartBrowser.childTest.fail("Unable to Click :"+eleName,
-					MediaEntityBuilder.createScreenCaptureFromBase64String(screenShot()).build());
-
+					MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
+			
+			//String screenshotPath = CommonFunctions.capture(driver, "screenshotForExtetReport");
+			
 			StartBrowser.childTest.info(e);
+			
 			throw e;
 
 		}
@@ -80,7 +94,8 @@ public class ActionDriver
 
 			StartBrowser.childTest.fail("Unable to perform Type action in :"+eleName + " With Data "+testData,
 					MediaEntityBuilder.createScreenCaptureFromBase64String(screenShot()).build());
-			StartBrowser.childTest.info(e);		
+			
+				
 			throw e;
 		}
 	}

@@ -22,7 +22,7 @@ public class I94Actions {
 		aDriver = new ActionDriver();
 	}
 
-	public void ApplyNow(String firstName,String lastName,String birthDay,String birthMonth,String birthYear,String documentNumber,String passportCountry) throws Exception
+	public void ApplyNow(String firstName,String lastName,String birthDay,String birthMonth,String birthYear,String Gender,String documentNumber,String passportCountry) throws Exception
 	{
 		StartBrowser.childTest = StartBrowser.parentTest.createNode( "Apply Now");
 		aDriver.click(com.abc.applications.i94.or.I94.lnkAppForNewI94, "Apply For New I-94 Link");
@@ -34,6 +34,12 @@ public class I94Actions {
 		aDriver.type(com.abc.applications.i94.or.I94.txtBirthDay, birthDay, "Birth Day");
 		aDriver.type(com.abc.applications.i94.or.I94.txtBirthMo, birthMonth, "Birth Month");
 		aDriver.type(com.abc.applications.i94.or.I94.txtBirthYear, birthYear, "Birth Year");
+		//Gender(Gender);
+		//if (gender == "M")
+		//{
+		//	aDriver.click(com.abc.applications.i94.or.I94.rbtgendermale, "Gender Male");
+		//	System.out.println("This is M");
+		//}
 		aDriver.click(com.abc.applications.i94.or.I94.rbtgendermale, "Gender Male");
 		//aDriver.click(com.abc.applications.i94.or.I94.rbtgenderfemale, "Gender Female");
 		//aDriver.click(com.abc.applications.i94.or.I94.rbtgenderother, "Gender other");
@@ -60,11 +66,24 @@ public class I94Actions {
 		//Thread.sleep(2000);
 	}
 
+	public void Gender(String gender) throws Exception
+	{
+		System.out.println("******");
+		System.out.println(gender);
+		if (gender=="M")
+		{
+			aDriver.click(com.abc.applications.i94.or.I94.rbtgendermale, "Gender Male");
+			System.out.println("This is M");
+		}
+	}
+
+
+
 	public void GroupUpload(String firstName,String lastName,String emailAddress) throws Exception
 	{
-		
+
 		CommonFunctions cfs = new CommonFunctions();
-		
+
 		StartBrowser.childTest = StartBrowser.parentTest.createNode( "Group Upload");
 		aDriver.click(com.abc.applications.i94.or.I94.lnkAppForNewI94, "Apply For New I-94 Link");
 		aDriver.click(com.abc.applications.i94.or.I94.lnkGroupUpload, "Group Upload");
@@ -77,11 +96,11 @@ public class I94Actions {
 		aDriver.click(com.abc.applications.i94.or.I94.btnCreateGroup, "YES, CREATE A GROUP");
 		aDriver.click(com.abc.applications.i94.or.I94.btnChooseExcelFile, "CHOOSE EXCEL FILE");
 
-		
-		cfs.UploadFile("C:\\Users\\nlibu\\git\\SeleniumHybridFrameWorkExcel\\SeleniumHybridFrameWorkExcel\\TestData\\I94-File-Upload-Template_v0311.xlsx");
-		
 
-		
+		cfs.UploadFile("C:\\Users\\nlibu\\git\\SeleniumHybridFrameWorkExcel\\SeleniumHybridFrameWorkExcel\\TestData\\I94-File-Upload-Template_v0311.xlsx");
+
+
+
 
 		//aDriver.click(com.abc.applications.i94.or.I94.rbtnviaalandborder, "via a land border");
 		//aDriver.type(com.abc.applications.i94.or.I94.txtFirstName, firstName, "First Name");
