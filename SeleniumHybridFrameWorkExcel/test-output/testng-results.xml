@@ -2,39 +2,39 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="30912" started-at="2021-03-23T14:14:47Z" finished-at="2021-03-23T14:15:18Z">
+  <suite name="Default suite" duration-ms="20977" started-at="2021-03-23T14:21:11Z" finished-at="2021-03-23T14:21:32Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="30912" started-at="2021-03-23T14:14:47Z" finished-at="2021-03-23T14:15:18Z">
-      <class name="com.abc.applications.i94.scripts.I94ApplyNowNilo">
-        <test-method status="PASS" signature="generateReport()[pri:0, instance:com.abc.applications.i94.scripts.I94ApplyNowNilo@5442a311]" name="generateReport" is-config="true" duration-ms="179" started-at="2021-03-23T10:14:47Z" finished-at="2021-03-23T10:14:47Z">
+    <test name="Default test" duration-ms="20977" started-at="2021-03-23T14:21:11Z" finished-at="2021-03-23T14:21:32Z">
+      <class name="com.abc.applications.i94.scripts.I94GroupUpload">
+        <test-method status="PASS" signature="generateReport()[pri:0, instance:com.abc.applications.i94.scripts.I94GroupUpload@5442a311]" name="generateReport" is-config="true" duration-ms="249" started-at="2021-03-23T10:21:11Z" finished-at="2021-03-23T10:21:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.abc.applications.i94.scripts.I94ApplyNowNilo@5442a311]" name="beforeClass" is-config="true" duration-ms="2044" started-at="2021-03-23T10:14:48Z" finished-at="2021-03-23T10:14:50Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.abc.applications.i94.scripts.I94GroupUpload@5442a311]" name="beforeClass" is-config="true" duration-ms="2680" started-at="2021-03-23T10:21:12Z" finished-at="2021-03-23T10:21:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="methodName(java.lang.reflect.Method)[pri:0, instance:com.abc.applications.i94.scripts.I94ApplyNowNilo@5442a311]" name="methodName" is-config="true" duration-ms="0" started-at="2021-03-23T10:14:50Z" finished-at="2021-03-23T10:14:50Z">
+        <test-method status="PASS" signature="methodName(java.lang.reflect.Method)[pri:0, instance:com.abc.applications.i94.scripts.I94GroupUpload@5442a311]" name="methodName" is-config="true" duration-ms="16" started-at="2021-03-23T10:21:14Z" finished-at="2021-03-23T10:21:14Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.abc.applications.i94.scripts.I94ApplyNowNilo.testI94ApplyNow() throws java.lang.Exception]]>
+                <![CDATA[public void com.abc.applications.i94.scripts.I94GroupUpload.I94testGroupUpload() throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodName -->
-        <test-method status="PASS" signature="testI94ApplyNow()[pri:0, instance:com.abc.applications.i94.scripts.I94ApplyNowNilo@5442a311]" name="testI94ApplyNow" duration-ms="27704" started-at="2021-03-23T10:14:50Z" finished-at="2021-03-23T10:15:17Z">
+        <test-method status="PASS" signature="I94testGroupUpload()[pri:0, instance:com.abc.applications.i94.scripts.I94GroupUpload@5442a311]" name="I94testGroupUpload" duration-ms="16925" started-at="2021-03-23T10:21:14Z" finished-at="2021-03-23T10:21:31Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testI94ApplyNow -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.abc.applications.i94.scripts.I94ApplyNowNilo@5442a311]" name="afterClass" is-config="true" duration-ms="953" started-at="2021-03-23T10:15:17Z" finished-at="2021-03-23T10:15:18Z">
+        </test-method> <!-- I94testGroupUpload -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.abc.applications.i94.scripts.I94GroupUpload@5442a311]" name="afterClass" is-config="true" duration-ms="1090" started-at="2021-03-23T10:21:31Z" finished-at="2021-03-23T10:21:32Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.abc.applications.i94.scripts.I94ApplyNowNilo -->
+      </class> <!-- com.abc.applications.i94.scripts.I94GroupUpload -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -28,10 +28,11 @@ public class I94GroupUpload extends StartBrowser{
 		 CommonFunctions cfs = new CommonFunctions();
 		  
 		 I94Actions i94a = new I94Actions ();
+		 String linkurl = cfs.processInput  ();
 		 
 		  while(recordset.next()){
 			  
-			  cfs.NavigateToHomePage("https://i94.cbp.dhs.gov/I94/#/home");
+			  cfs.NavigateToHomePage(linkurl);
 				 
 			  i94a.GroupUpload(recordset.getField("First Name"),recordset.getField("Last Name"),recordset.getField("Email Address"));
 				//Use of Robot class to upload file
