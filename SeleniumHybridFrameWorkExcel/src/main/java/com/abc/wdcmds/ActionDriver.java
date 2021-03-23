@@ -36,12 +36,14 @@ public class ActionDriver
 			StartBrowser.childTest.pass("Successfully Navigated to :"+url);
 		}
 		catch(Exception e) {
+			String screenshotPath = CommonFunctions.capture(driver, "screenshotForExtetReport");
+
 			StartBrowser.childTest.fail("Unable to Navigated to :"+url,
-				
-					MediaEntityBuilder.createScreenCaptureFromBase64String(screenShot()).build());
-			
-			
-			
+
+					MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
+
+
+
 			StartBrowser.childTest.info(e);
 			throw e;
 		}
@@ -61,15 +63,15 @@ public class ActionDriver
 			StartBrowser.childTest.pass("Successfully Clicked :"+eleName);
 		}
 		catch(Exception e) {
-			
+
 			String screenshotPath = CommonFunctions.capture(driver, "screenshotForExtetReport");
 			StartBrowser.childTest.fail("Unable to Click :"+eleName,
 					MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
-			
+
 			//String screenshotPath = CommonFunctions.capture(driver, "screenshotForExtetReport");
-			
+
 			StartBrowser.childTest.info(e);
-			
+
 			throw e;
 
 		}
@@ -90,12 +92,12 @@ public class ActionDriver
 		}
 		catch(Exception e) {
 
-
+			String screenshotPath = CommonFunctions.capture(driver, "screenshotForExtetReport");
 
 			StartBrowser.childTest.fail("Unable to perform Type action in :"+eleName + " With Data "+testData,
-					MediaEntityBuilder.createScreenCaptureFromBase64String(screenShot()).build());
-			
-				
+					MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
+
+
 			throw e;
 		}
 	}
@@ -110,8 +112,9 @@ public class ActionDriver
 			StartBrowser.childTest.pass("Successfully performed Mousehover on:"+eleName);
 		}
 		catch(Exception e) {
+			String screenshotPath = CommonFunctions.capture(driver, "screenshotForExtetReport");
 			StartBrowser.childTest.fail("Unable to perform Mousehover on :"+eleName,
-					MediaEntityBuilder.createScreenCaptureFromBase64String(screenShot()).build());
+					MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
 			StartBrowser.childTest.info(e);		
 			throw e;
 		}

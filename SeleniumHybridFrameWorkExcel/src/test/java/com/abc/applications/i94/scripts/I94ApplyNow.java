@@ -35,7 +35,7 @@ public class I94ApplyNow extends StartBrowser {
 			  
 			  //cfs.AccountMenu();
 			  
-			 Thread.sleep(9000);
+			 //Thread.sleep(9000);
 			
 		  }
 		  
