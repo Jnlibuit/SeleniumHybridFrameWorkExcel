@@ -19,7 +19,7 @@ public class I94Actions {
 		aDriver = new ActionDriver();
 	}
 
-	public void ApplyNow(String firstName,String lastName,String birthDay,String birthMonth,String birthYear,String Gender,String documentNumber,String passportCountry,String issueDay,String issueMonth,String issueYear,String expirationDay,String expirationMonth,String expirationYear,String visaIssuanceCountry,String visaNumber,String visaIssueDay,String visaIssueMonth,String visaIssueYear) throws Exception
+	public void ApplyNow(String firstName,String lastName,String birth,String Gender,String documentNumber,String passportCountry,String issueDay,String issueMonth,String issueYear,String expirationDay,String expirationMonth,String expirationYear,String visaIssuanceCountry,String visaNumber,String visaIssueDay,String visaIssueMonth,String visaIssueYear) throws Exception
 	{
 		CommonFunctions cfs = new CommonFunctions();
 		
@@ -31,10 +31,10 @@ public class I94Actions {
 		aDriver.type(com.abc.applications.i94.or.I94.txtFirstName, firstName, "First Name");
 		aDriver.type(com.abc.applications.i94.or.I94.txtLastName, lastName, "Last Name");
 		
-		
-		aDriver.type(com.abc.applications.i94.or.I94.txtBirthDay, birthDay, "Birth Day");
-		aDriver.type(com.abc.applications.i94.or.I94.txtBirthMo, birthMonth, "Birth Month");
-		aDriver.type(com.abc.applications.i94.or.I94.txtBirthYear, birthYear, "Birth Year");
+		String[] ans = cfs.DateSplit(birth);
+		aDriver.type(com.abc.applications.i94.or.I94.txtBirthDay, ans[0], "Birth Day");
+		aDriver.type(com.abc.applications.i94.or.I94.txtBirthMo, ans[1], "Birth Month");
+		aDriver.type(com.abc.applications.i94.or.I94.txtBirthYear, ans[2], "Birth Year");
 		
 		CommonFunctions.Gender(Gender);
 		
@@ -56,7 +56,7 @@ public class I94Actions {
 		aDriver.type(com.abc.applications.i94.or.I94.txtVisaIssueDay, visaIssueDay, "Visa Issue Day");
 		aDriver.type(com.abc.applications.i94.or.I94.txtVisaIssueMonth, visaIssueMonth, "Visa Issue Month");
 		aDriver.type(com.abc.applications.i94.or.I94.txtVisaIssueYear, visaIssueYear, "Visa Issue Year");
-		aDriver.click(com.abc.applications.i94.or.I94.btnNext, "Next");
+		//aDriver.click(com.abc.applications.i94.or.I94.btnNext, "Next");
 		
 		
 		
