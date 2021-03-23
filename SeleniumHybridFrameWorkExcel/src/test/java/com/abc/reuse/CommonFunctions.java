@@ -54,7 +54,34 @@ public class CommonFunctions {
 
 		//Thread.sleep(1000);
 	}
+	public static String[] DateSplit(String date) throws Exception
+	{
+		String date1 = date;
+		String day = "";
+		String mo = "";
+		String year = "";
+		String[] x=date.split("-");
+		System.out.println(day+x[0]);
+		System.out.println(day+x[1]);
+		System.out.println(day+x[2]);
 
+		day =(x[0]);
+		mo = (x[1]);
+		year =(x[2]);
+
+		String[] ans = new String[3]; 
+		ans[0]  =day; 
+		ans[1] = mo;
+		ans[2] = year;
+
+		System.out.println("6666666");
+		System.out.println(ans[0]);
+		System.out.println(ans[1]);
+		System.out.println(ans[2]);
+		
+		return ans;
+		//Thread.sleep(1000);
+	}
 	public void Signout() throws Exception
 	{
 		StartBrowser.childTest = StartBrowser.parentTest.createNode( "However to Account Menu");

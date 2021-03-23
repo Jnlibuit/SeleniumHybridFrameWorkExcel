@@ -21,14 +21,14 @@ public class I94ApplyNowNilo extends StartBrowser {
 						
 		
 		 CommonFunctions cfs = new CommonFunctions();
-		  
+		 
 		 I94Actions i94a = new I94Actions ();
 		 
 		  while(recordset.next()){
 			  
 			  cfs.NavigateToHomePage("https://i94.cbp.dhs.gov/I94/#/home");
 				 
-			  i94a.ApplyNowNilo(recordset.getField("First Name"),recordset.getField("Last Name"),recordset.getField("Birth Day"),recordset.getField("Birth Month"),recordset.getField("Birth Year"),recordset.getField("Gender"),recordset.getField("Document Number"),recordset.getField("Passport Country of Issue"));
+			  i94a.ApplyNowNilo(recordset.getField("First Name"),recordset.getField("Last Name"),recordset.getField("Birth Date"),recordset.getField("Birth Day"),recordset.getField("Birth Month"),recordset.getField("Birth Year"),recordset.getField("Gender"),recordset.getField("Document Number"),recordset.getField("Passport Country of Issue"));
 			  
 			  
 			  //cfs.AccountMenu();
