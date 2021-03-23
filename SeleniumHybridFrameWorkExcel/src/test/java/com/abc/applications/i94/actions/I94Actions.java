@@ -19,7 +19,7 @@ public class I94Actions {
 		aDriver = new ActionDriver();
 	}
 
-	public void ApplyNow(String firstName,String lastName,String birth,String Gender,String documentNumber,String passportCountry,String passportIssue,String expirationDay,String expirationMonth,String expirationYear,String visaIssuanceCountry,String visaNumber,String visaIssueDay,String visaIssueMonth,String visaIssueYear) throws Exception
+	public void ApplyNow(String firstName,String lastName,String birth,String Gender,String documentNumber,String passportCountry,String passportIssue,String expiration,String visaIssuanceCountry,String visaNumber,String visaIssueDay,String visaIssueMonth,String visaIssueYear) throws Exception
 	{
 		CommonFunctions cfs = new CommonFunctions();
 		
@@ -47,17 +47,18 @@ public class I94Actions {
 		aDriver.type(com.abc.applications.i94.or.I94.txtPassportCountry, passportCountry, "Passport Country of Issue");
 		
 		String[] ans2 = cfs.DateSplit(passportIssue);
-		aDriver.type(com.abc.applications.i94.or.I94.txtPassportIssueDay, ans2[0], "Birth Day");
-		aDriver.type(com.abc.applications.i94.or.I94.txtPassportIssueMonth, ans2[1], "Birth Month");
-		aDriver.type(com.abc.applications.i94.or.I94.txtPassportIssueYear, ans2[2], "Birth Year");
+		aDriver.type(com.abc.applications.i94.or.I94.txtPassportIssueDay, ans2[0], "Issue Day");
+		aDriver.type(com.abc.applications.i94.or.I94.txtPassportIssueMonth, ans2[1], "Issue Month");
+		aDriver.type(com.abc.applications.i94.or.I94.txtPassportIssueYear, ans2[2], "Issue Year");
 		
+		String[] ans3 = cfs.DateSplit(expiration);
+		aDriver.type(com.abc.applications.i94.or.I94.txtPassportExpirationDay, ans3[0], "Passport Expiration Day");
+		aDriver.type(com.abc.applications.i94.or.I94.txtPassportExpirationMonth, ans3[1], "Passport Expiration Month");
+		aDriver.type(com.abc.applications.i94.or.I94.txtPassportExpirationYear, ans3[2], "Passport Expiration Year");;
 		
-		//aDriver.type(com.abc.applications.i94.or.I94.txtPassportIssueDay, issueDay, "Passport Issue Day");
-		//aDriver.type(com.abc.applications.i94.or.I94.txtPassportIssueMonth, issueMonth, "Passport Issue Month");
-		//aDriver.type(com.abc.applications.i94.or.I94.txtPassportIssueYear, issueYear, "Passport Issue Year");
-		aDriver.type(com.abc.applications.i94.or.I94.txtPassportExpirationDay, expirationDay, "Passport Expiration Day");
-		aDriver.type(com.abc.applications.i94.or.I94.txtPassportExpirationMonth, expirationMonth, "Passport Expiration Month");
-		aDriver.type(com.abc.applications.i94.or.I94.txtPassportExpirationYear, expirationYear, "Passport Expiration Year");
+		//aDriver.type(com.abc.applications.i94.or.I94.txtPassportExpirationDay, expirationDay, "Passport Expiration Day");
+		//aDriver.type(com.abc.applications.i94.or.I94.txtPassportExpirationMonth, expirationMonth, "Passport Expiration Month");
+		//aDriver.type(com.abc.applications.i94.or.I94.txtPassportExpirationYear, expirationYear, "Passport Expiration Year");
 		aDriver.type(com.abc.applications.i94.or.I94.txtVisaCountry, visaIssuanceCountry,"Visa Country of Issuance");
 		aDriver.type(com.abc.applications.i94.or.I94.txtVisaNumber, visaNumber, "Visa Number");
 		aDriver.type(com.abc.applications.i94.or.I94.txtVisaIssueDay, visaIssueDay, "Visa Issue Day");
