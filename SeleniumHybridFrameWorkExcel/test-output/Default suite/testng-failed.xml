@@ -3,33 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.abc.applications.sample.scripts.SigninSignout">
+      <class name="com.abc.applications.i94.scripts.I94ApplyNow">
         <methods>
           <include name="methodName"/>
           <include name="afterClass"/>
-          <include name="testSiginSignout"/>
-          <include name="beforeClass"/>
-          <include name="generateReport"/>
-        </methods>
-      </class> <!-- com.abc.applications.sample.scripts.SigninSignout -->
-      <class name="com.abc.applications.i94.scripts.I94GroupUpload">
-        <methods>
-          <include name="I94testGroupUpload"/>
-          <include name="methodName"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="generateReport"/>
-        </methods>
-      </class> <!-- com.abc.applications.i94.scripts.I94GroupUpload -->
-      <class name="com.abc.applications.i94.scripts.I94ApplyNowNilo">
-        <methods>
-          <include name="methodName"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="generateReport"/>
           <include name="testI94ApplyNow"/>
+          <include name="beforeClass"/>
+          <include name="generateReport"/>
         </methods>
-      </class> <!-- com.abc.applications.i94.scripts.I94ApplyNowNilo -->
+      </class> <!-- com.abc.applications.i94.scripts.I94ApplyNow -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

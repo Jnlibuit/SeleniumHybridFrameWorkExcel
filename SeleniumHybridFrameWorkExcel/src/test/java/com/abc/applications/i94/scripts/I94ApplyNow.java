@@ -29,7 +29,7 @@ public class I94ApplyNow extends StartBrowser {
 			  cfs.NavigateToHomePage("https://i94.cbp.dhs.gov/I94/#/home");
 			 
 			  
-			  i94a.ApplyNow(recordset.getField("First Name"),recordset.getField("Last Name"),recordset.getField("Birth Date"),recordset.getField("Gender"),recordset.getField("Document Number"),recordset.getField("Passport Country of Issue"),recordset.getField("Passport Issue Day"),recordset.getField("Passport Issue Month"),recordset.getField("Passport Issue Year"),recordset.getField("Passport Expiration Day"),recordset.getField("Passport Expiration Month"),recordset.getField("Passport Expiration Year"),recordset.getField("Visa Country of Issuance"),recordset.getField("Visa Number"),recordset.getField("Visa Issue Day"),recordset.getField("Visa Issue Month"),recordset.getField("Visa Issue Year"));
+			  i94a.ApplyNow(recordset.getField("First Name"),recordset.getField("Last Name"),recordset.getField("Birth Date"),recordset.getField("Gender"),recordset.getField("Document Number"),recordset.getField("Passport Country of Issue"),recordset.getField("Passport Issue Date"),recordset.getField("Passport Expiration Day"),recordset.getField("Passport Expiration Month"),recordset.getField("Passport Expiration Year"),recordset.getField("Visa Country of Issuance"),recordset.getField("Visa Number"),recordset.getField("Visa Issue Day"),recordset.getField("Visa Issue Month"),recordset.getField("Visa Issue Year"));
 			  
 			  
 			  
