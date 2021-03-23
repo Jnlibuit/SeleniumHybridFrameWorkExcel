@@ -5,7 +5,10 @@ import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -21,7 +24,7 @@ public class CommonFunctions {
 
 	public static WebDriver driver;
 	public static ActionDriver aDriver;
-
+	public static Properties prop;
 	public CommonFunctions()
 	{
 		driver = StartBrowser.driver;
@@ -61,9 +64,9 @@ public class CommonFunctions {
 		String mo = "";
 		String year = "";
 		String[] x=date.split("-");
-		System.out.println(day+x[0]);
-		System.out.println(day+x[1]);
-		System.out.println(day+x[2]);
+		//System.out.println(day+x[0]);
+		//System.out.println(day+x[1]);
+		//System.out.println(day+x[2]);
 
 		day =(x[0]);
 		mo = (x[1]);
@@ -74,10 +77,10 @@ public class CommonFunctions {
 		ans[1] = mo;
 		ans[2] = year;
 
-		System.out.println("6666666");
-		System.out.println(ans[0]);
-		System.out.println(ans[1]);
-		System.out.println(ans[2]);
+		//System.out.println("6666666");
+		//System.out.println(ans[0]);
+		//System.out.println(ans[1]);
+		//System.out.println(ans[2]);
 		
 		return ans;
 		//Thread.sleep(1000);
@@ -154,6 +157,29 @@ public class CommonFunctions {
 		String screenshotPath = CommonFunctions.capture(driver, "screenshotForExtetReport");
 		StartBrowser.childTest.pass("Print Last Page",
 				MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
+	}
+	
+	public static String processInput() throws IOException 
+	{
+		//System.out.println("Here inside processInput");
+		
+		try {
+			prop = new Properties();
+			FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/src/test/java/com/abc/applications/i94"
+					+ "/I94config/config.properties");
+
+			prop.load(ip);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		String urlLink = prop.getProperty("url");
+		//System.out.println("Url link");
+		//System.out.println(urlLink);
+		
+		return urlLink;
 	}
 	public void UploadFile(String filename ) throws Exception
 	{

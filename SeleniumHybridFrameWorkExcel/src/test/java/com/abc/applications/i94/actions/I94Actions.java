@@ -102,8 +102,8 @@ public class I94Actions {
 		aDriver.type(com.abc.applications.i94.or.I94.txtBirthYear, ans[2], "Birth Year");
 		
 		cfs.Gender(Gender);
-		System.out.println("+++++++++");
-		System.out.println(Gender);
+		//System.out.println("+++++++++");
+		//System.out.println(Gender);
 		/*
 		System.out.println("+++++++++");
 		System.out.println(Gender);

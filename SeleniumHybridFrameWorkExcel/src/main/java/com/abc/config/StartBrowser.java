@@ -1,6 +1,7 @@
 package com.abc.config;
 
 import java.lang.reflect.Method;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
