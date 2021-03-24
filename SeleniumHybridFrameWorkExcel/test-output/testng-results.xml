@@ -2,39 +2,39 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="7948" started-at="2021-03-24T12:42:34Z" finished-at="2021-03-24T12:42:42Z">
+  <suite name="Default suite" duration-ms="217044" started-at="2021-03-24T15:11:36Z" finished-at="2021-03-24T15:15:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="7948" started-at="2021-03-24T12:42:34Z" finished-at="2021-03-24T12:42:42Z">
-      <class name="com.abc.utils.I94ISO2">
-        <test-method status="PASS" signature="generateReport()[pri:0, instance:com.abc.utils.I94ISO2@57fffcd7]" name="generateReport" is-config="true" duration-ms="169" started-at="2021-03-24T08:42:34Z" finished-at="2021-03-24T08:42:35Z">
+    <test name="Default test" duration-ms="217044" started-at="2021-03-24T15:11:36Z" finished-at="2021-03-24T15:15:13Z">
+      <class name="com.abc.applications.i94.scripts.I94ApplyNowNilo">
+        <test-method status="PASS" signature="generateReport()[pri:0, instance:com.abc.applications.i94.scripts.I94ApplyNowNilo@f6c48ac]" name="generateReport" is-config="true" duration-ms="163" started-at="2021-03-24T11:11:36Z" finished-at="2021-03-24T11:11:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.abc.utils.I94ISO2@57fffcd7]" name="beforeClass" is-config="true" duration-ms="1965" started-at="2021-03-24T08:42:35Z" finished-at="2021-03-24T08:42:37Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.abc.applications.i94.scripts.I94ApplyNowNilo@f6c48ac]" name="beforeClass" is-config="true" duration-ms="2695" started-at="2021-03-24T11:11:37Z" finished-at="2021-03-24T11:11:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="methodName(java.lang.reflect.Method)[pri:0, instance:com.abc.utils.I94ISO2@57fffcd7]" name="methodName" is-config="true" duration-ms="3" started-at="2021-03-24T08:42:37Z" finished-at="2021-03-24T08:42:37Z">
+        <test-method status="PASS" signature="methodName(java.lang.reflect.Method)[pri:0, instance:com.abc.applications.i94.scripts.I94ApplyNowNilo@f6c48ac]" name="methodName" is-config="true" duration-ms="8" started-at="2021-03-24T11:11:39Z" finished-at="2021-03-24T11:11:39Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.abc.utils.I94ISO2.testI94I94ISO() throws java.lang.Exception]]>
+                <![CDATA[public void com.abc.applications.i94.scripts.I94ApplyNowNilo.testI94ApplyNow() throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodName -->
-        <test-method status="PASS" signature="testI94I94ISO()[pri:0, instance:com.abc.utils.I94ISO2@57fffcd7]" name="testI94I94ISO" duration-ms="4640" started-at="2021-03-24T08:42:37Z" finished-at="2021-03-24T08:42:41Z">
+        <test-method status="PASS" signature="testI94ApplyNow()[pri:0, instance:com.abc.applications.i94.scripts.I94ApplyNowNilo@f6c48ac]" name="testI94ApplyNow" duration-ms="212788" started-at="2021-03-24T11:11:39Z" finished-at="2021-03-24T11:15:12Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testI94I94ISO -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.abc.utils.I94ISO2@57fffcd7]" name="afterClass" is-config="true" duration-ms="1158" started-at="2021-03-24T08:42:41Z" finished-at="2021-03-24T08:42:42Z">
+        </test-method> <!-- testI94ApplyNow -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.abc.applications.i94.scripts.I94ApplyNowNilo@f6c48ac]" name="afterClass" is-config="true" duration-ms="1369" started-at="2021-03-24T11:15:12Z" finished-at="2021-03-24T11:15:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.abc.utils.I94ISO2 -->
+      </class> <!-- com.abc.applications.i94.scripts.I94ApplyNowNilo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
