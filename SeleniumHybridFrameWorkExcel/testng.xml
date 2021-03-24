@@ -5,6 +5,7 @@
     <classes>
        <class name="com.abc.applications.i94.scripts.I94ApplyNow" />
        <class name="com.abc.applications.i94.scripts.I94GroupUpload" />
+       <class name="com.abc.applications.esta.scripts.EstaApplyNow" />
     </classes>
   </test>
   </suite>
