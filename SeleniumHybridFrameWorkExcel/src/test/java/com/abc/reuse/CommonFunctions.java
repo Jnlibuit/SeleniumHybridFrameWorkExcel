@@ -151,7 +151,7 @@ public class CommonFunctions {
 	public static String isoCountrycode(String countryCode) throws IOException 
 	{
 		String countryCd = countryCode;
-				
+
 		String ABW="ABW";
 		String AFG="AFG";
 		String AGO="AGO";
@@ -414,800 +414,800 @@ public class CommonFunctions {
 		String ZAR="ZAR";
 		String ZMB="ZMB";
 		String ZWE="ZWE";
-		
-		
-		
-		
-		
+
+
+
+
+
 		String countryName = "";
-		
-		
+
+
 		if (countryCd.equals(ABW)) {
 			countryName="Aruba";
-			}
-			if (countryCd.equals(AFG)) {
+		}
+		if (countryCd.equals(AFG)) {
 			countryName="Afghanistan";
-			}
-			if (countryCd.equals(AGO)) {
+		}
+		if (countryCd.equals(AGO)) {
 			countryName="Angola";
-			}
-			if (countryCd.equals(AIA)) {
+		}
+		if (countryCd.equals(AIA)) {
 			countryName="Anguilla";
-			}
-			if (countryCd.equals(ALB)) {
+		}
+		if (countryCd.equals(ALB)) {
 			countryName="Albania";
-			}
-			if (countryCd.equals(AND)) {
+		}
+		if (countryCd.equals(AND)) {
 			countryName="Andorra*";
-			}
-			if (countryCd.equals(ANT)) {
+		}
+		if (countryCd.equals(ANT)) {
 			countryName="Netherlands Antilles";
-			}
-			if (countryCd.equals(ARE)) {
+		}
+		if (countryCd.equals(ARE)) {
 			countryName="United Arab Emirates";
-			}
-			if (countryCd.equals(ARG)) {
+		}
+		if (countryCd.equals(ARG)) {
 			countryName="Argentina";
-			}
-			if (countryCd.equals(ARM)) {
+		}
+		if (countryCd.equals(ARM)) {
 			countryName="Armenia";
-			}
-			if (countryCd.equals(ASM)) {
+		}
+		if (countryCd.equals(ASM)) {
 			countryName="American Samoa";
-			}
-			if (countryCd.equals(ATA)) {
+		}
+		if (countryCd.equals(ATA)) {
 			countryName="Antarctica";
-			}
-			if (countryCd.equals(ATF)) {
+		}
+		if (countryCd.equals(ATF)) {
 			countryName="French Southern and Antarctic Lands";
-			}
-			if (countryCd.equals(ATG)) {
+		}
+		if (countryCd.equals(ATG)) {
 			countryName="Antigua and Barbuda";
-			}
-			if (countryCd.equals(AUS)) {
+		}
+		if (countryCd.equals(AUS)) {
 			countryName="Australia*";
-			}
-			if (countryCd.equals(AUT)) {
+		}
+		if (countryCd.equals(AUT)) {
 			countryName="Austria*";
-			}
-			if (countryCd.equals(AZE)) {
+		}
+		if (countryCd.equals(AZE)) {
 			countryName="Azerbaijan";
-			}
-			if (countryCd.equals(BDI)) {
+		}
+		if (countryCd.equals(BDI)) {
 			countryName="Burundi";
-			}
-			if (countryCd.equals(BEL)) {
+		}
+		if (countryCd.equals(BEL)) {
 			countryName="Belgium*";
-			}
-			if (countryCd.equals(BEN)) {
+		}
+		if (countryCd.equals(BEN)) {
 			countryName="Benin";
-			}
-			if (countryCd.equals(BES)) {
+		}
+		if (countryCd.equals(BES)) {
 			countryName="Bonaire, Sint Eustatius, and Saba";
-			}
-			if (countryCd.equals(BFA)) {
+		}
+		if (countryCd.equals(BFA)) {
 			countryName="Burkina Faso";
-			}
-			if (countryCd.equals(BGD)) {
+		}
+		if (countryCd.equals(BGD)) {
 			countryName="Bangladesh";
-			}
-			if (countryCd.equals(BGR)) {
+		}
+		if (countryCd.equals(BGR)) {
 			countryName="Bulgaria";
-			}
-			if (countryCd.equals(BHR)) {
+		}
+		if (countryCd.equals(BHR)) {
 			countryName="Bahrain";
-			}
-			if (countryCd.equals(BHS)) {
+		}
+		if (countryCd.equals(BHS)) {
 			countryName="Bahamas, The";
-			}
-			if (countryCd.equals(BIH)) {
+		}
+		if (countryCd.equals(BIH)) {
 			countryName="Bosnia and Herzegovina";
-			}
-			if (countryCd.equals(BLM)) {
+		}
+		if (countryCd.equals(BLM)) {
 			countryName="Saint Barthelemy";
-			}
-			if (countryCd.equals(BLR)) {
+		}
+		if (countryCd.equals(BLR)) {
 			countryName="Belarus";
-			}
-			if (countryCd.equals(BLZ)) {
+		}
+		if (countryCd.equals(BLZ)) {
 			countryName="Belize";
-			}
-			if (countryCd.equals(BMU)) {
+		}
+		if (countryCd.equals(BMU)) {
 			countryName="Bermuda";
-			}
-			if (countryCd.equals(BOL)) {
+		}
+		if (countryCd.equals(BOL)) {
 			countryName="Bolivia";
-			}
-			if (countryCd.equals(BRA)) {
+		}
+		if (countryCd.equals(BRA)) {
 			countryName="Brazil";
-			}
-			if (countryCd.equals(BRB)) {
+		}
+		if (countryCd.equals(BRB)) {
 			countryName="Barbados";
-			}
-			if (countryCd.equals(BRN)) {
+		}
+		if (countryCd.equals(BRN)) {
 			countryName="Brunei*";
-			}
-			if (countryCd.equals(BTN)) {
+		}
+		if (countryCd.equals(BTN)) {
 			countryName="Bhutan";
-			}
-			if (countryCd.equals(BVT)) {
+		}
+		if (countryCd.equals(BVT)) {
 			countryName="Bouvet Island";
-			}
-			if (countryCd.equals(BWA)) {
+		}
+		if (countryCd.equals(BWA)) {
 			countryName="Botswana";
-			}
-			if (countryCd.equals(CAF)) {
+		}
+		if (countryCd.equals(CAF)) {
 			countryName="Central African Republic";
-			}
-			if (countryCd.equals(CAN)) {
+		}
+		if (countryCd.equals(CAN)) {
 			countryName="Canada";
-			}
-			if (countryCd.equals(CCK)) {
+		}
+		if (countryCd.equals(CCK)) {
 			countryName="Cocos (Keeling) Islands";
-			}
-			if (countryCd.equals(CHE)) {
+		}
+		if (countryCd.equals(CHE)) {
 			countryName="Switzerland*";
-			}
-			if (countryCd.equals(CHL)) {
+		}
+		if (countryCd.equals(CHL)) {
 			countryName="Chile*";
-			}
-			if (countryCd.equals(CHN)) {
+		}
+		if (countryCd.equals(CHN)) {
 			countryName="China";
-			}
-			if (countryCd.equals(CIV)) {
+		}
+		if (countryCd.equals(CIV)) {
 			countryName="Cote d'Ivoire";
-			}
-			if (countryCd.equals(CMR)) {
+		}
+		if (countryCd.equals(CMR)) {
 			countryName="Cameroon";
-			}
-			if (countryCd.equals(COD)) {
+		}
+		if (countryCd.equals(COD)) {
 			countryName="Congo, Democratic Republic of the";
-			}
-			if (countryCd.equals(COG)) {
+		}
+		if (countryCd.equals(COG)) {
 			countryName="Congo, Republic of the";
-			}
-			if (countryCd.equals(COK)) {
+		}
+		if (countryCd.equals(COK)) {
 			countryName="Cook Islands";
-			}
-			if (countryCd.equals(COL)) {
+		}
+		if (countryCd.equals(COL)) {
 			countryName="Colombia";
-			}
-			if (countryCd.equals(COM)) {
+		}
+		if (countryCd.equals(COM)) {
 			countryName="Comoros";
-			}
-			if (countryCd.equals(CPV)) {
+		}
+		if (countryCd.equals(CPV)) {
 			countryName="Cape Verde";
-			}
-			if (countryCd.equals(CRI)) {
+		}
+		if (countryCd.equals(CRI)) {
 			countryName="Costa Rica";
-			}
-			if (countryCd.equals(CUB)) {
+		}
+		if (countryCd.equals(CUB)) {
 			countryName="Cuba";
-			}
-			if (countryCd.equals(CUW)) {
+		}
+		if (countryCd.equals(CUW)) {
 			countryName="Curacao";
-			}
-			if (countryCd.equals(CXR)) {
+		}
+		if (countryCd.equals(CXR)) {
 			countryName="Christmas Island";
-			}
-			if (countryCd.equals(CYM)) {
+		}
+		if (countryCd.equals(CYM)) {
 			countryName="Cayman Islands";
-			}
-			if (countryCd.equals(CYP)) {
+		}
+		if (countryCd.equals(CYP)) {
 			countryName="Cyprus";
-			}
-			if (countryCd.equals(CZE)) {
+		}
+		if (countryCd.equals(CZE)) {
 			countryName="Czech Republic*";
-			}
-			if (countryCd.equals(DEU)) {
+		}
+		if (countryCd.equals(DEU)) {
 			countryName="Germany*";
-			}
-			if (countryCd.equals(DJI)) {
+		}
+		if (countryCd.equals(DJI)) {
 			countryName="Djibouti";
-			}
-			if (countryCd.equals(DMA)) {
+		}
+		if (countryCd.equals(DMA)) {
 			countryName="Dominica";
-			}
-			if (countryCd.equals(DNK)) {
+		}
+		if (countryCd.equals(DNK)) {
 			countryName="Denmark*";
-			}
-			if (countryCd.equals(DOM)) {
+		}
+		if (countryCd.equals(DOM)) {
 			countryName="Dominican Republic";
-			}
-			if (countryCd.equals(DZA)) {
+		}
+		if (countryCd.equals(DZA)) {
 			countryName="Algeria";
-			}
-			if (countryCd.equals(ECU)) {
+		}
+		if (countryCd.equals(ECU)) {
 			countryName="Ecuador";
-			}
-			if (countryCd.equals(EGY)) {
+		}
+		if (countryCd.equals(EGY)) {
 			countryName="Egypt";
-			}
-			if (countryCd.equals(ERI)) {
+		}
+		if (countryCd.equals(ERI)) {
 			countryName="Eritrea";
-			}
-			if (countryCd.equals(ESH)) {
+		}
+		if (countryCd.equals(ESH)) {
 			countryName="Western Sahara";
-			}
-			if (countryCd.equals(ESP)) {
+		}
+		if (countryCd.equals(ESP)) {
 			countryName="Spain*";
-			}
-			if (countryCd.equals(EST)) {
+		}
+		if (countryCd.equals(EST)) {
 			countryName="Estonia*";
-			}
-			if (countryCd.equals(ETH)) {
+		}
+		if (countryCd.equals(ETH)) {
 			countryName="Ethiopia";
-			}
-			if (countryCd.equals(FIN)) {
+		}
+		if (countryCd.equals(FIN)) {
 			countryName="Finland*";
-			}
-			if (countryCd.equals(FJI)) {
+		}
+		if (countryCd.equals(FJI)) {
 			countryName="Fiji";
-			}
-			if (countryCd.equals(FLK)) {
+		}
+		if (countryCd.equals(FLK)) {
 			countryName="Falkland Islands (Islas Malvinas)";
-			}
-			if (countryCd.equals(FRA)) {
+		}
+		if (countryCd.equals(FRA)) {
 			countryName="France*";
-			}
-			if (countryCd.equals(FRO)) {
+		}
+		if (countryCd.equals(FRO)) {
 			countryName="Faroe Islands";
-			}
-			if (countryCd.equals(FSM)) {
+		}
+		if (countryCd.equals(FSM)) {
 			countryName="Micronesia, Federated States of";
-			}
-			if (countryCd.equals(FXX)) {
+		}
+		if (countryCd.equals(FXX)) {
 			countryName="France, Metropolitan";
-			}
-			if (countryCd.equals(GAB)) {
+		}
+		if (countryCd.equals(GAB)) {
 			countryName="Gabon";
-			}
-			if (countryCd.equals(GBD)) {
+		}
+		if (countryCd.equals(GBD)) {
 			countryName="UK - British DTC";
-			}
-			if (countryCd.equals(GBN)) {
+		}
+		if (countryCd.equals(GBN)) {
 			countryName="UK - British National (O)";
-			}
-			if (countryCd.equals(GBO)) {
+		}
+		if (countryCd.equals(GBO)) {
 			countryName="UK - British Overseas";
-			}
-			if (countryCd.equals(GBP)) {
+		}
+		if (countryCd.equals(GBP)) {
 			countryName="UK - Protected Person";
-			}
-			if (countryCd.equals(GBR)) {
+		}
+		if (countryCd.equals(GBR)) {
 			countryName="United Kingdom*";
-			}
-			if (countryCd.equals(GBS)) {
+		}
+		if (countryCd.equals(GBS)) {
 			countryName="UK - British Subject";
-			}
-			if (countryCd.equals(GGY)) {
+		}
+		if (countryCd.equals(GGY)) {
 			countryName="Guernsey";
-			}
-			if (countryCd.equals(GHA)) {
+		}
+		if (countryCd.equals(GHA)) {
 			countryName="Ghana";
-			}
-			if (countryCd.equals(GIB)) {
+		}
+		if (countryCd.equals(GIB)) {
 			countryName="Gibraltar";
-			}
-			if (countryCd.equals(GIN)) {
+		}
+		if (countryCd.equals(GIN)) {
 			countryName="Guinea";
-			}
-			if (countryCd.equals(GLP)) {
+		}
+		if (countryCd.equals(GLP)) {
 			countryName="Guadeloupe";
-			}
-			if (countryCd.equals(GMB)) {
+		}
+		if (countryCd.equals(GMB)) {
 			countryName="Gambia, The";
-			}
-			if (countryCd.equals(GNB)) {
+		}
+		if (countryCd.equals(GNB)) {
 			countryName="Guinea-Bissau";
-			}
-			if (countryCd.equals(GNQ)) {
+		}
+		if (countryCd.equals(GNQ)) {
 			countryName="Equatorial Guinea";
-			}
-			if (countryCd.equals(GRC)) {
+		}
+		if (countryCd.equals(GRC)) {
 			countryName="Greece*";
-			}
-			if (countryCd.equals(GRD)) {
+		}
+		if (countryCd.equals(GRD)) {
 			countryName="Grenada";
-			}
-			if (countryCd.equals(GRL)) {
+		}
+		if (countryCd.equals(GRL)) {
 			countryName="Greenland";
-			}
-			if (countryCd.equals(GTM)) {
+		}
+		if (countryCd.equals(GTM)) {
 			countryName="Guatemala";
-			}
-			if (countryCd.equals(GUF)) {
+		}
+		if (countryCd.equals(GUF)) {
 			countryName="French Guiana";
-			}
-			if (countryCd.equals(GUM)) {
+		}
+		if (countryCd.equals(GUM)) {
 			countryName="Guam";
-			}
-			if (countryCd.equals(GUY)) {
+		}
+		if (countryCd.equals(GUY)) {
 			countryName="Guyana";
-			}
-			if (countryCd.equals(HKG)) {
+		}
+		if (countryCd.equals(HKG)) {
 			countryName="Hong Kong";
-			}
-			if (countryCd.equals(HMD)) {
+		}
+		if (countryCd.equals(HMD)) {
 			countryName="Heard Island and McDonald Islands";
-			}
-			if (countryCd.equals(HND)) {
+		}
+		if (countryCd.equals(HND)) {
 			countryName="Honduras";
-			}
-			if (countryCd.equals(HRV)) {
+		}
+		if (countryCd.equals(HRV)) {
 			countryName="Croatia";
-			}
-			if (countryCd.equals(HTI)) {
+		}
+		if (countryCd.equals(HTI)) {
 			countryName="Haiti";
-			}
-			if (countryCd.equals(HUN)) {
+		}
+		if (countryCd.equals(HUN)) {
 			countryName="Hungary*";
-			}
-			if (countryCd.equals(IDN)) {
+		}
+		if (countryCd.equals(IDN)) {
 			countryName="Indonesia";
-			}
-			if (countryCd.equals(IMN)) {
+		}
+		if (countryCd.equals(IMN)) {
 			countryName="Isle of Man";
-			}
-			if (countryCd.equals(IND)) {
+		}
+		if (countryCd.equals(IND)) {
 			countryName="India";
-			}
-			if (countryCd.equals(IOT)) {
+		}
+		if (countryCd.equals(IOT)) {
 			countryName="British Indian Ocean Territory";
-			}
-			if (countryCd.equals(IRL)) {
+		}
+		if (countryCd.equals(IRL)) {
 			countryName="Ireland*";
-			}
-			if (countryCd.equals(IRN)) {
+		}
+		if (countryCd.equals(IRN)) {
 			countryName="Iran";
-			}
-			if (countryCd.equals(IRQ)) {
+		}
+		if (countryCd.equals(IRQ)) {
 			countryName="Iraq";
-			}
-			if (countryCd.equals(ISL)) {
+		}
+		if (countryCd.equals(ISL)) {
 			countryName="Iceland*";
-			}
-			if (countryCd.equals(ISR)) {
+		}
+		if (countryCd.equals(ISR)) {
 			countryName="Israel";
-			}
-			if (countryCd.equals(ITA)) {
+		}
+		if (countryCd.equals(ITA)) {
 			countryName="Italy*";
-			}
-			if (countryCd.equals(JAM)) {
+		}
+		if (countryCd.equals(JAM)) {
 			countryName="Jamaica";
-			}
-			if (countryCd.equals(JEY)) {
+		}
+		if (countryCd.equals(JEY)) {
 			countryName="Jersey";
-			}
-			if (countryCd.equals(JOR)) {
+		}
+		if (countryCd.equals(JOR)) {
 			countryName="Jordan";
-			}
-			if (countryCd.equals(JPN)) {
+		}
+		if (countryCd.equals(JPN)) {
 			countryName="Japan*";
-			}
-			if (countryCd.equals(KAZ)) {
+		}
+		if (countryCd.equals(KAZ)) {
 			countryName="Kazakhstan";
-			}
-			if (countryCd.equals(KEN)) {
+		}
+		if (countryCd.equals(KEN)) {
 			countryName="Kenya";
-			}
-			if (countryCd.equals(KGZ)) {
+		}
+		if (countryCd.equals(KGZ)) {
 			countryName="Kyrgyzstan";
-			}
-			if (countryCd.equals(KHM)) {
+		}
+		if (countryCd.equals(KHM)) {
 			countryName="Cambodia";
-			}
-			if (countryCd.equals(KIR)) {
+		}
+		if (countryCd.equals(KIR)) {
 			countryName="Kiribati";
-			}
-			if (countryCd.equals(KNA)) {
+		}
+		if (countryCd.equals(KNA)) {
 			countryName="Saint Kitts and Nevis";
-			}
-			if (countryCd.equals(KOR)) {
+		}
+		if (countryCd.equals(KOR)) {
 			countryName="Korea, South*";
-			}
-			if (countryCd.equals(KWT)) {
+		}
+		if (countryCd.equals(KWT)) {
 			countryName="Kuwait";
-			}
-			if (countryCd.equals(LAO)) {
+		}
+		if (countryCd.equals(LAO)) {
 			countryName="Laos";
-			}
-			if (countryCd.equals(LBN)) {
+		}
+		if (countryCd.equals(LBN)) {
 			countryName="Lebanon";
-			}
-			if (countryCd.equals(LBR)) {
+		}
+		if (countryCd.equals(LBR)) {
 			countryName="Liberia";
-			}
-			if (countryCd.equals(LBY)) {
+		}
+		if (countryCd.equals(LBY)) {
 			countryName="Libya";
-			}
-			if (countryCd.equals(LCA)) {
+		}
+		if (countryCd.equals(LCA)) {
 			countryName="Saint Lucia";
-			}
-			if (countryCd.equals(LIE)) {
+		}
+		if (countryCd.equals(LIE)) {
 			countryName="Liechtenstein*";
-			}
-			if (countryCd.equals(LKA)) {
+		}
+		if (countryCd.equals(LKA)) {
 			countryName="Sri Lanka";
-			}
-			if (countryCd.equals(LSO)) {
+		}
+		if (countryCd.equals(LSO)) {
 			countryName="Lesotho";
-			}
-			if (countryCd.equals(LTU)) {
+		}
+		if (countryCd.equals(LTU)) {
 			countryName="Lithuania*";
-			}
-			if (countryCd.equals(LUX)) {
+		}
+		if (countryCd.equals(LUX)) {
 			countryName="Luxembourg*";
-			}
-			if (countryCd.equals(LVA)) {
+		}
+		if (countryCd.equals(LVA)) {
 			countryName="Latvia*";
-			}
-			if (countryCd.equals(MAC)) {
+		}
+		if (countryCd.equals(MAC)) {
 			countryName="Macau";
-			}
-			if (countryCd.equals(MAF)) {
+		}
+		if (countryCd.equals(MAF)) {
 			countryName="Saint Martin";
-			}
-			if (countryCd.equals(MAR)) {
+		}
+		if (countryCd.equals(MAR)) {
 			countryName="Morocco";
-			}
-			if (countryCd.equals(MCO)) {
+		}
+		if (countryCd.equals(MCO)) {
 			countryName="Monaco*";
-			}
-			if (countryCd.equals(MDA)) {
+		}
+		if (countryCd.equals(MDA)) {
 			countryName="Moldova";
-			}
-			if (countryCd.equals(MDG)) {
+		}
+		if (countryCd.equals(MDG)) {
 			countryName="Madagascar";
-			}
-			if (countryCd.equals(MDV)) {
+		}
+		if (countryCd.equals(MDV)) {
 			countryName="Maldives";
-			}
-			if (countryCd.equals(MEX)) {
+		}
+		if (countryCd.equals(MEX)) {
 			countryName="Mexico";
-			}
-			if (countryCd.equals(MHL)) {
+		}
+		if (countryCd.equals(MHL)) {
 			countryName="Marshall Islands";
-			}
-			if (countryCd.equals(MKD)) {
+		}
+		if (countryCd.equals(MKD)) {
 			countryName="Macedonia";
-			}
-			if (countryCd.equals(MLI)) {
+		}
+		if (countryCd.equals(MLI)) {
 			countryName="Mali";
-			}
-			if (countryCd.equals(MLT)) {
+		}
+		if (countryCd.equals(MLT)) {
 			countryName="Malta*";
-			}
-			if (countryCd.equals(MMR)) {
+		}
+		if (countryCd.equals(MMR)) {
 			countryName="Burma";
-			}
-			if (countryCd.equals(MNE)) {
+		}
+		if (countryCd.equals(MNE)) {
 			countryName="Montenegro";
-			}
-			if (countryCd.equals(MNG)) {
+		}
+		if (countryCd.equals(MNG)) {
 			countryName="Mongolia";
-			}
-			if (countryCd.equals(MNP)) {
+		}
+		if (countryCd.equals(MNP)) {
 			countryName="Northern Mariana Islands";
-			}
-			if (countryCd.equals(MOZ)) {
+		}
+		if (countryCd.equals(MOZ)) {
 			countryName="Mozambique";
-			}
-			if (countryCd.equals(MRT)) {
+		}
+		if (countryCd.equals(MRT)) {
 			countryName="Mauritania";
-			}
-			if (countryCd.equals(MSR)) {
+		}
+		if (countryCd.equals(MSR)) {
 			countryName="Montserrat";
-			}
-			if (countryCd.equals(MTQ)) {
+		}
+		if (countryCd.equals(MTQ)) {
 			countryName="Martinique";
-			}
-			if (countryCd.equals(MUS)) {
+		}
+		if (countryCd.equals(MUS)) {
 			countryName="Mauritius";
-			}
-			if (countryCd.equals(MWI)) {
+		}
+		if (countryCd.equals(MWI)) {
 			countryName="Malawi";
-			}
-			if (countryCd.equals(MYS)) {
+		}
+		if (countryCd.equals(MYS)) {
 			countryName="Malaysia";
-			}
-			if (countryCd.equals(MYT)) {
+		}
+		if (countryCd.equals(MYT)) {
 			countryName="Mayotte";
-			}
-			if (countryCd.equals(NAM)) {
+		}
+		if (countryCd.equals(NAM)) {
 			countryName="Namibia";
-			}
-			if (countryCd.equals(NCL)) {
+		}
+		if (countryCd.equals(NCL)) {
 			countryName="New Caledonia";
-			}
-			if (countryCd.equals(NER)) {
+		}
+		if (countryCd.equals(NER)) {
 			countryName="Niger";
-			}
-			if (countryCd.equals(NFK)) {
+		}
+		if (countryCd.equals(NFK)) {
 			countryName="Norfolk Island";
-			}
-			if (countryCd.equals(NGA)) {
+		}
+		if (countryCd.equals(NGA)) {
 			countryName="Nigeria";
-			}
-			if (countryCd.equals(NIC)) {
+		}
+		if (countryCd.equals(NIC)) {
 			countryName="Nicaragua";
-			}
-			if (countryCd.equals(NIU)) {
+		}
+		if (countryCd.equals(NIU)) {
 			countryName="Niue";
-			}
-			if (countryCd.equals(NLD)) {
+		}
+		if (countryCd.equals(NLD)) {
 			countryName="Netherlands*";
-			}
-			if (countryCd.equals(NOR)) {
+		}
+		if (countryCd.equals(NOR)) {
 			countryName="Norway*";
-			}
-			if (countryCd.equals(NPL)) {
+		}
+		if (countryCd.equals(NPL)) {
 			countryName="Nepal";
-			}
-			if (countryCd.equals(NRU)) {
+		}
+		if (countryCd.equals(NRU)) {
 			countryName="Nauru";
-			}
-			if (countryCd.equals(NZL)) {
+		}
+		if (countryCd.equals(NZL)) {
 			countryName="New Zealand*";
-			}
-			if (countryCd.equals(OMN)) {
+		}
+		if (countryCd.equals(OMN)) {
 			countryName="Oman";
-			}
-			if (countryCd.equals(PAK)) {
+		}
+		if (countryCd.equals(PAK)) {
 			countryName="Pakistan";
-			}
-			if (countryCd.equals(PAN)) {
+		}
+		if (countryCd.equals(PAN)) {
 			countryName="Panama";
-			}
-			if (countryCd.equals(PCN)) {
+		}
+		if (countryCd.equals(PCN)) {
 			countryName="Pitcairn Islands";
-			}
-			if (countryCd.equals(PER)) {
+		}
+		if (countryCd.equals(PER)) {
 			countryName="Peru";
-			}
-			if (countryCd.equals(PHL)) {
+		}
+		if (countryCd.equals(PHL)) {
 			countryName="Philippines";
-			}
-			if (countryCd.equals(PLW)) {
+		}
+		if (countryCd.equals(PLW)) {
 			countryName="Palau";
-			}
-			if (countryCd.equals(PNG)) {
+		}
+		if (countryCd.equals(PNG)) {
 			countryName="Papua New Guinea";
-			}
-			if (countryCd.equals(POL)) {
+		}
+		if (countryCd.equals(POL)) {
 			countryName="Poland";
-			}
-			if (countryCd.equals(PRI)) {
+		}
+		if (countryCd.equals(PRI)) {
 			countryName="Puerto Rico";
-			}
-			if (countryCd.equals(PRK)) {
+		}
+		if (countryCd.equals(PRK)) {
 			countryName="Korea, North";
-			}
-			if (countryCd.equals(PRT)) {
+		}
+		if (countryCd.equals(PRT)) {
 			countryName="Portugal*";
-			}
-			if (countryCd.equals(PRY)) {
+		}
+		if (countryCd.equals(PRY)) {
 			countryName="Paraguay";
-			}
-			if (countryCd.equals(PSE)) {
+		}
+		if (countryCd.equals(PSE)) {
 			countryName="Gaza Strip";
-			}
-			if (countryCd.equals(PYF)) {
+		}
+		if (countryCd.equals(PYF)) {
 			countryName="French Polynesia";
-			}
-			if (countryCd.equals(QAT)) {
+		}
+		if (countryCd.equals(QAT)) {
 			countryName="Qatar";
-			}
-			if (countryCd.equals(REU)) {
+		}
+		if (countryCd.equals(REU)) {
 			countryName="Reunion";
-			}
-			if (countryCd.equals(RKS)) {
+		}
+		if (countryCd.equals(RKS)) {
 			countryName="Republic of Kosovo";
-			}
-			if (countryCd.equals(ROU)) {
+		}
+		if (countryCd.equals(ROU)) {
 			countryName="Romania";
-			}
-			if (countryCd.equals(RUS)) {
+		}
+		if (countryCd.equals(RUS)) {
 			countryName="Russia";
-			}
-			if (countryCd.equals(RWA)) {
+		}
+		if (countryCd.equals(RWA)) {
 			countryName="Rwanda";
-			}
-			if (countryCd.equals(SAU)) {
+		}
+		if (countryCd.equals(SAU)) {
 			countryName="Saudi Arabia";
-			}
-			if (countryCd.equals(SDN)) {
+		}
+		if (countryCd.equals(SDN)) {
 			countryName="Sudan";
-			}
-			if (countryCd.equals(SEN)) {
+		}
+		if (countryCd.equals(SEN)) {
 			countryName="Senegal";
-			}
-			if (countryCd.equals(SGP)) {
+		}
+		if (countryCd.equals(SGP)) {
 			countryName="Singapore*";
-			}
-			if (countryCd.equals(SGS)) {
+		}
+		if (countryCd.equals(SGS)) {
 			countryName="South Georgia and the Islands";
-			}
-			if (countryCd.equals(SHN)) {
+		}
+		if (countryCd.equals(SHN)) {
 			countryName="Saint Helena";
-			}
-			if (countryCd.equals(SJM)) {
+		}
+		if (countryCd.equals(SJM)) {
 			countryName="Svalbard";
-			}
-			if (countryCd.equals(SLB)) {
+		}
+		if (countryCd.equals(SLB)) {
 			countryName="Solomon Islands";
-			}
-			if (countryCd.equals(SLE)) {
+		}
+		if (countryCd.equals(SLE)) {
 			countryName="Sierra Leone";
-			}
-			if (countryCd.equals(SLV)) {
+		}
+		if (countryCd.equals(SLV)) {
 			countryName="El Salvador";
-			}
-			if (countryCd.equals(SMR)) {
+		}
+		if (countryCd.equals(SMR)) {
 			countryName="San Marino*";
-			}
-			if (countryCd.equals(SOM)) {
+		}
+		if (countryCd.equals(SOM)) {
 			countryName="Somalia";
-			}
-			if (countryCd.equals(SPM)) {
+		}
+		if (countryCd.equals(SPM)) {
 			countryName="Saint Pierre and Miquelon";
-			}
-			if (countryCd.equals(SRB)) {
+		}
+		if (countryCd.equals(SRB)) {
 			countryName="Serbia";
-			}
-			if (countryCd.equals(SSD)) {
+		}
+		if (countryCd.equals(SSD)) {
 			countryName="South Sudan";
-			}
-			if (countryCd.equals(STP)) {
+		}
+		if (countryCd.equals(STP)) {
 			countryName="Sao Tome and Principe";
-			}
-			if (countryCd.equals(SUR)) {
+		}
+		if (countryCd.equals(SUR)) {
 			countryName="Suriname";
-			}
-			if (countryCd.equals(SVK)) {
+		}
+		if (countryCd.equals(SVK)) {
 			countryName="Slovakia*";
-			}
-			if (countryCd.equals(SVN)) {
+		}
+		if (countryCd.equals(SVN)) {
 			countryName="Slovenia*";
-			}
-			if (countryCd.equals(SWE)) {
+		}
+		if (countryCd.equals(SWE)) {
 			countryName="Sweden*";
-			}
-			if (countryCd.equals(SWZ)) {
+		}
+		if (countryCd.equals(SWZ)) {
 			countryName="Swaziland";
-			}
-			if (countryCd.equals(SXM)) {
+		}
+		if (countryCd.equals(SXM)) {
 			countryName="Sint Maarten";
-			}
-			if (countryCd.equals(SYC)) {
+		}
+		if (countryCd.equals(SYC)) {
 			countryName="Seychelles";
-			}
-			if (countryCd.equals(SYR)) {
+		}
+		if (countryCd.equals(SYR)) {
 			countryName="Syria";
-			}
-			if (countryCd.equals(TCA)) {
+		}
+		if (countryCd.equals(TCA)) {
 			countryName="Turks and Caicos Islands";
-			}
-			if (countryCd.equals(TCD)) {
+		}
+		if (countryCd.equals(TCD)) {
 			countryName="Chad";
-			}
-			if (countryCd.equals(TGO)) {
+		}
+		if (countryCd.equals(TGO)) {
 			countryName="Togo";
-			}
-			if (countryCd.equals(THA)) {
+		}
+		if (countryCd.equals(THA)) {
 			countryName="Thailand";
-			}
-			if (countryCd.equals(TJK)) {
+		}
+		if (countryCd.equals(TJK)) {
 			countryName="Tajikistan";
-			}
-			if (countryCd.equals(TKL)) {
+		}
+		if (countryCd.equals(TKL)) {
 			countryName="Tokelau";
-			}
-			if (countryCd.equals(TKM)) {
+		}
+		if (countryCd.equals(TKM)) {
 			countryName="Turkmenistan";
-			}
-			if (countryCd.equals(TLS)) {
+		}
+		if (countryCd.equals(TLS)) {
 			countryName="Timor-Leste";
-			}
-			if (countryCd.equals(TON)) {
+		}
+		if (countryCd.equals(TON)) {
 			countryName="Tonga";
-			}
-			if (countryCd.equals(TTO)) {
+		}
+		if (countryCd.equals(TTO)) {
 			countryName="Trinidad and Tobago";
-			}
-			if (countryCd.equals(TUN)) {
+		}
+		if (countryCd.equals(TUN)) {
 			countryName="Tunisia";
-			}
-			if (countryCd.equals(TUR)) {
+		}
+		if (countryCd.equals(TUR)) {
 			countryName="Turkey";
-			}
-			if (countryCd.equals(TUV)) {
+		}
+		if (countryCd.equals(TUV)) {
 			countryName="Tuvalu";
-			}
-			if (countryCd.equals(TWN)) {
+		}
+		if (countryCd.equals(TWN)) {
 			countryName="Taiwan*";
-			}
-			if (countryCd.equals(TZA)) {
+		}
+		if (countryCd.equals(TZA)) {
 			countryName="Tanzania";
-			}
-			if (countryCd.equals(UGA)) {
+		}
+		if (countryCd.equals(UGA)) {
 			countryName="Uganda";
-			}
-			if (countryCd.equals(UKR)) {
+		}
+		if (countryCd.equals(UKR)) {
 			countryName="Ukraine";
-			}
-			if (countryCd.equals(UMI)) {
+		}
+		if (countryCd.equals(UMI)) {
 			countryName="United States Minor Outlying Islands";
-			}
-			if (countryCd.equals(UNO)) {
+		}
+		if (countryCd.equals(UNO)) {
 			countryName="United Nations";
-			}
-			if (countryCd.equals(URY)) {
+		}
+		if (countryCd.equals(URY)) {
 			countryName="Uruguay";
-			}
-			if (countryCd.equals(USA)) {
+		}
+		if (countryCd.equals(USA)) {
 			countryName="United States";
-			}
-			if (countryCd.equals(UZB)) {
+		}
+		if (countryCd.equals(UZB)) {
 			countryName="Uzbekistan";
-			}
-			if (countryCd.equals(VAT)) {
+		}
+		if (countryCd.equals(VAT)) {
 			countryName="Holy See (Vatican City)";
-			}
-			if (countryCd.equals(VCT)) {
+		}
+		if (countryCd.equals(VCT)) {
 			countryName="Saint Vincent and the Grenadines";
-			}
-			if (countryCd.equals(VEN)) {
+		}
+		if (countryCd.equals(VEN)) {
 			countryName="Venezuela";
-			}
-			if (countryCd.equals(VGB)) {
+		}
+		if (countryCd.equals(VGB)) {
 			countryName="British Virgin Islands";
-			}
-			if (countryCd.equals(VIR)) {
+		}
+		if (countryCd.equals(VIR)) {
 			countryName="Virgin Islands";
-			}
-			if (countryCd.equals(VNM)) {
+		}
+		if (countryCd.equals(VNM)) {
 			countryName="Vietnam";
-			}
-			if (countryCd.equals(VUT)) {
+		}
+		if (countryCd.equals(VUT)) {
 			countryName="Vanuatu";
-			}
-			if (countryCd.equals(WAK)) {
+		}
+		if (countryCd.equals(WAK)) {
 			countryName="Wake Island";
-			}
-			if (countryCd.equals(WLF)) {
+		}
+		if (countryCd.equals(WLF)) {
 			countryName="Wallis and Futuna";
-			}
-			if (countryCd.equals(WSM)) {
+		}
+		if (countryCd.equals(WSM)) {
 			countryName="Samoa";
-			}
-			if (countryCd.equals(XXB)) {
+		}
+		if (countryCd.equals(XXB)) {
 			countryName="1951 Convention Refugee Status";
-			}
-			if (countryCd.equals(XXC)) {
+		}
+		if (countryCd.equals(XXC)) {
 			countryName="Refugee, Other";
-			}
-			if (countryCd.equals(XXX)) {
+		}
+		if (countryCd.equals(XXX)) {
 			countryName="Person Of Unspecified Nationality";
-			}
-			if (countryCd.equals(YEM)) {
+		}
+		if (countryCd.equals(YEM)) {
 			countryName="Yemen";
-			}
-			if (countryCd.equals(YMD)) {
+		}
+		if (countryCd.equals(YMD)) {
 			countryName="Democratic Yemen";
-			}
-			if (countryCd.equals(ZAF)) {
+		}
+		if (countryCd.equals(ZAF)) {
 			countryName="South Africa";
-			}
-			if (countryCd.equals(ZAR)) {
+		}
+		if (countryCd.equals(ZAR)) {
 			countryName="Zaire";
-			}
-			if (countryCd.equals(ZMB)) {
+		}
+		if (countryCd.equals(ZMB)) {
 			countryName="Zambia";
-			}
-			if (countryCd.equals(ZWE)) {
+		}
+		if (countryCd.equals(ZWE)) {
 			countryName="Zimbabwe";
-			}
+		}
 
 		return countryName;
 	}
