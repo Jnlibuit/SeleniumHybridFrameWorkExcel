@@ -1,4 +1,4 @@
-package com.abc.applications.i94.scripts;
+package com.abc.utils;
 
 import org.testng.annotations.Test;
 
@@ -9,7 +9,7 @@ import com.codoid.products.fillo.Connection;
 import com.codoid.products.fillo.Fillo;
 import com.codoid.products.fillo.Recordset;
 
-public class I94ISO extends StartBrowser {
+public class I94ISO2 extends StartBrowser {
 	
 		@Test
 		  public void testI94I94ISO() throws Exception 
@@ -37,15 +37,13 @@ public class I94ISO extends StartBrowser {
 				 //System.out.println(countryCode);
 				 //System.out.println(countryName); 
 				 
-				 System.out.println("if (countryCd.equals("+countryCode+")) {"); 
-				 // i94a.ApplyNow(recordset.getField("First Name"),recordset.getField("Last Name"),recordset.getField("Birth Date"),recordset.getField("Gender"),recordset.getField("Document Number"),recordset.getField("Passport Country of Issue"),recordset.getField("Passport Issue Date"),recordset.getField("Passport Expiration Date"),recordset.getField("Visa Country of Issuance"),recordset.getField("Visa Number"),recordset.getField("Visa Issue Date"));
-				 //if (countryCd.equals(ALB)) {
-				 System.out.println("countryName="+ '"'+recordset.getField("Country Name")+'"'+';');
-				 System.out.println("}");
+				 System.out.println("String "+recordset.getField("ISO Country Code")+"="+'"'+recordset.getField("ISO Country Code")+'"'+";");
+				 //System.out.println("countryName="+ '"'+recordset.getField("Country Name")+'"');
+				 //System.out.println("}");
 				//	 System.out.println("Country Name Is:"+countryName);
 				//} 
 				  
-				  
+				 //String ALB = "ALB";
 				  //cfs.AccountMenu();
 				  
 				 //Thread.sleep(9000);

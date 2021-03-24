@@ -11,7 +11,7 @@ import com.codoid.products.fillo.Recordset;
 
 public class I94ApplyNow extends StartBrowser {
 	@Test
-	  public void testI94ApplyNow() throws Exception 
+	  public void I94testApplyNow() throws Exception 
 	  {
 		Fillo g = new Fillo();
 		
