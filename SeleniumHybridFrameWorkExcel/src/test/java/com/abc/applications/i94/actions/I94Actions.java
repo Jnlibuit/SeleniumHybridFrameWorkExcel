@@ -44,6 +44,8 @@ public class I94Actions {
 		
 		aDriver.click(com.abc.applications.i94.or.I94.rbtpassport, "Passport");
 		aDriver.type(com.abc.applications.i94.or.I94.txtPassportNumber, documentNumber, "Document Number");
+		
+		
 		aDriver.type(com.abc.applications.i94.or.I94.txtPassportCountry, passportCountry, "Passport Country of Issue");
 		
 		String[] ans2 = cfs.DateSplit(passportIssue);
@@ -94,7 +96,7 @@ public class I94Actions {
 		//Thread.sleep(2000);
 	}
 
-	public void ApplyNowNilo(String firstName,String lastName,String birth,String birthDay,String birthMonth,String birthYear,String Gender,String documentNumber,String passportCountry) throws Exception
+	public void ApplyNowNilo(String firstName,String lastName,String birth,String Gender,String documentNumber,String passportCountry) throws Exception
 	{
 		CommonFunctions cfs = new CommonFunctions();
 		
@@ -113,6 +115,13 @@ public class I94Actions {
 		aDriver.type(com.abc.applications.i94.or.I94.txtBirthYear, ans[2], "Birth Year");
 		
 		cfs.Gender(Gender);
+		String countryName = cfs.isoCountrycode(passportCountry);
+		//System.out.println("RRRRRRRRR");
+		//System.out.println(countryName);
+		
+		aDriver.click(com.abc.applications.i94.or.I94.rbtpassport, "Passport");
+		aDriver.type(com.abc.applications.i94.or.I94.txtPassportNumber, documentNumber, "Document Number");
+		aDriver.type(com.abc.applications.i94.or.I94.txtPassportCountry, countryName, "Passport Country of Issue");
 		//System.out.println("+++++++++");
 		//System.out.println(Gender);
 		/*

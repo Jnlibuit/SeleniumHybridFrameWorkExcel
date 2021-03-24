@@ -28,7 +28,7 @@ public class I94GroupUpload extends StartBrowser{
 		 CommonFunctions cfs = new CommonFunctions();
 		  
 		 I94Actions i94a = new I94Actions ();
-		 String linkurl = cfs.processInput  ();
+		 String linkurl = cfs.processInput  ("/I94config");
 		 
 		  while(recordset.next()){
 			  

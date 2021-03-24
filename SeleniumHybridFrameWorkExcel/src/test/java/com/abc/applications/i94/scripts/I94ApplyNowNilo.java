@@ -17,25 +17,26 @@ public class I94ApplyNowNilo extends StartBrowser {
 		
 		Connection con = (Connection) g.getConnection("TestData/I94-File-Upload-Template_v0311.xlsx");
 		String strQuery = "Select * from Applicationstest";
+		//String strQuery = "Select * from Applications";
 		Recordset recordset = con.executeQuery(strQuery);
 						
 		
 		 CommonFunctions cfs = new CommonFunctions();
 		 
 		 I94Actions i94a = new I94Actions ();
-		 String linkurl = cfs.processInput  ();
+		 String linkurl = cfs.processInput  ("/I94config");
 		 
 	 
 		  while(recordset.next()){
 			  
 			  cfs.NavigateToHomePage(linkurl);
 				 
-			  i94a.ApplyNowNilo(recordset.getField("First Name"),recordset.getField("Last Name"),recordset.getField("Birth Date"),recordset.getField("Birth Day"),recordset.getField("Birth Month"),recordset.getField("Birth Year"),recordset.getField("Gender"),recordset.getField("Document Number"),recordset.getField("Passport Country of Issue"));
+			  i94a.ApplyNowNilo(recordset.getField("First Name"),recordset.getField("Last Name"),recordset.getField("Birth Date"),recordset.getField("Gender"),recordset.getField("Document Number"),recordset.getField("Passport Country of Issue"));
 			  
 			  
 			  //cfs.AccountMenu();
 			  
-			 Thread.sleep(9000);
+			 //Thread.sleep(9000);
 			
 		  }
 		  
