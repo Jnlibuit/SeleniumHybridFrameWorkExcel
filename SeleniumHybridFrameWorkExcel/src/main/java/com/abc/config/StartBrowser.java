@@ -29,12 +29,7 @@ public class StartBrowser {
 	public static ExtentTest childTest;
 	ExtentHtmlReporter htmlreporter;
 	String method;
-/*
-	@Test
-	public void lunch() {
-		driver.get("https://www.amazon.com/");
-	}
-*/	
+
 	@BeforeClass
 	public void beforeClass() {
 		//WebDriverManager.chromiumdriver().setup();//

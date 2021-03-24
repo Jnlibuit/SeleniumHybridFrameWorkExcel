@@ -131,13 +131,11 @@ public class CommonFunctions {
 
 		}
 
-		//public static By rbtgenderfemale = By.xpath("//body/div[1]/section[1]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/span[1]/div[8]/div[1]/div[4]/div[2]/div[1]/div[2]/label[1]/span[1]");
-
-		//public static By rbtgenderother = By.xpath("//body/div[1]/section[1]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/span[1]/div[8]/div[1]/div[4]/div[2]/div[1]/div[3]/label[1]/span[1]");
+		
 	}
 	public static String capture(WebDriver driver, String screenshotName) throws IOException 
 	{
-		//StartBrowser.childTest = StartBrowser.parentTest.createNode( "Navigate to Home Page");
+		
 		TakesScreenshot ts=(TakesScreenshot) driver;
 
 		File source = ts.getScreenshotAs(OutputType.FILE);
@@ -1242,7 +1240,7 @@ public class CommonFunctions {
 	}
 	public void UploadFile(String filename ) throws Exception
 	{
-		//StartBrowser.childTest = StartBrowser.parentTest.createNode( "Upload File");
+		
 
 		Thread.sleep(500);
 		//Use robot=new Robot class to upload file
@@ -1253,7 +1251,7 @@ public class CommonFunctions {
 		StringSelection filepath = new StringSelection (filename);
 
 
-		//System.out.println(filename);
+	
 
 		//Copy above path tom clipboard
 

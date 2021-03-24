@@ -59,9 +59,7 @@ public class I94 {
 	public static By txtVisaIssueYear = By.xpath("//input[@id='visaIssuanceYear']");
 	
 	public static By btnNext = By.xpath("//input[@id='nextButton']");
-	
-	//public static By rbtbcc = By.xpath("//body/div[1]/section[1]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/span[1]/div[8]/div[1]/div[7]/div[1]/div[2]/label[1]/span[1]");
-	
+		
 	public static By txtGroupFirstName = By.xpath("//input[@id='groupContactFirstName']");
 	
 	public static By txtGroupLastName = By.xpath("//input[@id='groupContactLastName']");

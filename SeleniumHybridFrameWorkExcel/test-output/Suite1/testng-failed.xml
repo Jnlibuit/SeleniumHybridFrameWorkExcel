@@ -3,22 +3,47 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
   <test name="Nopackage(failed)">
     <classes>
-      <class name="com.abc.applications.i94.scripts.I94ApplyNow">
+      <class name="com.abc.applications.i736.scripts.I736ApplyNow">
         <methods>
           <include name="methodName"/>
           <include name="afterClass"/>
-          <include name="testI94ApplyNow"/>
           <include name="beforeClass"/>
-          <include name="generateReport"/>
+          <include name="i736ApplyNow"/>
         </methods>
-      </class> <!-- com.abc.applications.i94.scripts.I94ApplyNow -->
+      </class> <!-- com.abc.applications.i736.scripts.I736ApplyNow -->
+      <class name="com.abc.applications.EVUS.scripts.EvusApplyNow">
+        <methods>
+          <include name="methodName"/>
+          <include name="afterClass"/>
+          <include name="evusApplyNow"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.abc.applications.EVUS.scripts.EvusApplyNow -->
       <class name="com.abc.applications.i94.scripts.I94GroupUpload">
         <methods>
+          <include name="I94testGroupUpload"/>
           <include name="methodName"/>
           <include name="afterClass"/>
           <include name="beforeClass"/>
         </methods>
       </class> <!-- com.abc.applications.i94.scripts.I94GroupUpload -->
+      <class name="com.abc.applications.i94.scripts.I94ApplyNow">
+        <methods>
+          <include name="methodName"/>
+          <include name="afterClass"/>
+          <include name="I94testApplyNow"/>
+          <include name="beforeClass"/>
+          <include name="generateReport"/>
+        </methods>
+      </class> <!-- com.abc.applications.i94.scripts.I94ApplyNow -->
+      <class name="com.abc.applications.esta.scripts.EstaApplyNow">
+        <methods>
+          <include name="methodName"/>
+          <include name="afterClass"/>
+          <include name="estaApplyNow"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.abc.applications.esta.scripts.EstaApplyNow -->
     </classes>
   </test> <!-- Nopackage(failed) -->
 </suite> <!-- Failed suite [Suite1] -->

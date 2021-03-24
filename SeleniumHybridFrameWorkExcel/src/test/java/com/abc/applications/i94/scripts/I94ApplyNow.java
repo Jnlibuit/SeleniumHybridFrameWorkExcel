@@ -18,7 +18,9 @@ public class I94ApplyNow extends StartBrowser {
 		 * Establish reference to Common Functions
 		 */
 		CommonFunctions cfs = new CommonFunctions();
-		
+		/**
+		 * Establish reference to I94 Functions
+		 */	
 		I94Actions i94a = new I94Actions ();
 		
 		/**

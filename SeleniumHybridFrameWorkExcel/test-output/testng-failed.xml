@@ -1,17 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
+  <test name="Nopackage(failed)">
     <classes>
+      <class name="com.abc.applications.i736.scripts.I736ApplyNow">
+        <methods>
+          <include name="methodName"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+          <include name="i736ApplyNow"/>
+        </methods>
+      </class> <!-- com.abc.applications.i736.scripts.I736ApplyNow -->
+      <class name="com.abc.applications.EVUS.scripts.EvusApplyNow">
+        <methods>
+          <include name="methodName"/>
+          <include name="afterClass"/>
+          <include name="evusApplyNow"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.abc.applications.EVUS.scripts.EvusApplyNow -->
+      <class name="com.abc.applications.i94.scripts.I94GroupUpload">
+        <methods>
+          <include name="I94testGroupUpload"/>
+          <include name="methodName"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.abc.applications.i94.scripts.I94GroupUpload -->
+      <class name="com.abc.applications.i94.scripts.I94ApplyNow">
+        <methods>
+          <include name="methodName"/>
+          <include name="afterClass"/>
+          <include name="I94testApplyNow"/>
+          <include name="beforeClass"/>
+          <include name="generateReport"/>
+        </methods>
+      </class> <!-- com.abc.applications.i94.scripts.I94ApplyNow -->
       <class name="com.abc.applications.esta.scripts.EstaApplyNow">
         <methods>
           <include name="methodName"/>
           <include name="afterClass"/>
           <include name="estaApplyNow"/>
           <include name="beforeClass"/>
-          <include name="generateReport"/>
         </methods>
       </class> <!-- com.abc.applications.esta.scripts.EstaApplyNow -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Nopackage(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
