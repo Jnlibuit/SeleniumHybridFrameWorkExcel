@@ -19,7 +19,7 @@ public class I94Actions {
 		aDriver = new ActionDriver();
 	}
 
-	public void ApplyNow(String firstName,String lastName,String birth,String Gender,String documentNumber,String passportCountry,String passportIssue,String expiration,String visaIssuanceCountry,String visaNumber,String visaIssueDate) throws Exception
+	public void ApplyNow(String firstName,String lastName,String birth,String Gender,String documentNumber,String passportCountry,String passportIssue,String expiration,String visaCountry,String visaNumber,String visaIssueDate) throws Exception
 	{
 		CommonFunctions cfs = new CommonFunctions();
 		
@@ -45,8 +45,8 @@ public class I94Actions {
 		aDriver.click(com.abc.applications.i94.or.I94.rbtpassport, "Passport");
 		aDriver.type(com.abc.applications.i94.or.I94.txtPassportNumber, documentNumber, "Document Number");
 		
-		
-		aDriver.type(com.abc.applications.i94.or.I94.txtPassportCountry, passportCountry, "Passport Country of Issue");
+		String countryName = cfs.isoCountrycode(passportCountry);
+		aDriver.type(com.abc.applications.i94.or.I94.txtPassportCountry, countryName, "Passport Country of Issue");
 		
 		String[] ans2 = cfs.DateSplit(passportIssue);
 		aDriver.type(com.abc.applications.i94.or.I94.txtPassportIssueDay, ans2[0], "Issue Day");
@@ -58,7 +58,7 @@ public class I94Actions {
 		aDriver.type(com.abc.applications.i94.or.I94.txtPassportExpirationMonth, ans3[1], "Passport Expiration Month");
 		aDriver.type(com.abc.applications.i94.or.I94.txtPassportExpirationYear, ans3[2], "Passport Expiration Year");
 		
-		aDriver.type(com.abc.applications.i94.or.I94.txtVisaCountry, visaIssuanceCountry,"Visa Country of Issuance");
+		aDriver.type(com.abc.applications.i94.or.I94.txtVisaCountry, visaCountry,"Visa Country of Issuance");
 		aDriver.type(com.abc.applications.i94.or.I94.txtVisaNumber, visaNumber, "Visa Number");
 		
 		String[] ans4 = cfs.DateSplit(visaIssueDate);
