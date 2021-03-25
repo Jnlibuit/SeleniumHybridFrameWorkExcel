@@ -8,20 +8,17 @@
           <include name="methodName"/>
           <include name="afterClass"/>
           <include name="beforeClass"/>
-          <include name="i736ApplyNow"/>
         </methods>
       </class> <!-- com.abc.applications.i736.scripts.I736ApplyNow -->
       <class name="com.abc.applications.EVUS.scripts.EvusApplyNow">
         <methods>
           <include name="methodName"/>
           <include name="afterClass"/>
-          <include name="evusApplyNow"/>
           <include name="beforeClass"/>
         </methods>
       </class> <!-- com.abc.applications.EVUS.scripts.EvusApplyNow -->
       <class name="com.abc.applications.i94.scripts.I94GroupUpload">
         <methods>
-          <include name="I94testGroupUpload"/>
           <include name="methodName"/>
           <include name="afterClass"/>
           <include name="beforeClass"/>
@@ -40,7 +37,6 @@
         <methods>
           <include name="methodName"/>
           <include name="afterClass"/>
-          <include name="estaApplyNow"/>
           <include name="beforeClass"/>
         </methods>
       </class> <!-- com.abc.applications.esta.scripts.EstaApplyNow -->

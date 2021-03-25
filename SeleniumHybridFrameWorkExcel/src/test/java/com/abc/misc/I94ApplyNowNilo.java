@@ -14,8 +14,8 @@ public class I94ApplyNowNilo extends StartBrowser {
 	  public void testI94ApplyNow() throws Exception 
 	  {
 		Fillo g = new Fillo();
-		
-		Connection con = (Connection) g.getConnection("TestData/I94-File-Upload-Template_v0311.xlsx");
+		Connection con = (Connection) g.getConnection("TestData/I94-File-Upload-Template_v312-2.xlsx");
+		//Connection con = (Connection) g.getConnection("TestData/I94-File-Upload-Template_v0311.xlsx");
 		//String strQuery = "Select * from Applicationstest";
 		String strQuery = "Select * from Applications";
 		Recordset recordset = con.executeQuery(strQuery);
