@@ -10,7 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
 import com.abc.config.StartBrowser;
-import com.abc.reuse.CommonFunctions;
+//import com.abc.reuse.CommonFunctions;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
@@ -36,11 +36,11 @@ public class ActionDriver
 			StartBrowser.childTest.pass("Successfully Navigated to :"+url);
 		}
 		catch(Exception e) {
-			String screenshotPath = CommonFunctions.capture(driver, "screenshotForExtetReport");
+		//	String screenshotPath = CommonFunctions.capture(driver, "screenshotForExtetReport");
 
-			StartBrowser.childTest.fail("Unable to Navigated to :"+url,
+		//	StartBrowser.childTest.fail("Unable to Navigated to :"+url,
 
-					MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
+		//			MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
 
 
 
@@ -64,9 +64,9 @@ public class ActionDriver
 		}
 		catch(Exception e) {
 
-			String screenshotPath = CommonFunctions.capture(driver, "screenshotForExtetReport");
-			StartBrowser.childTest.fail("Unable to Click :"+eleName,
-					MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
+			//String screenshotPath = CommonFunctions.capture(driver, "screenshotForExtetReport");
+			//StartBrowser.childTest.fail("Unable to Click :"+eleName,
+			//		MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
 
 			//String screenshotPath = CommonFunctions.capture(driver, "screenshotForExtetReport");
 
@@ -92,10 +92,10 @@ public class ActionDriver
 		}
 		catch(Exception e) {
 
-			String screenshotPath = CommonFunctions.capture(driver, "screenshotForExtetReport");
+			//String screenshotPath = CommonFunctions.capture(driver, "screenshotForExtetReport");
 
-			StartBrowser.childTest.fail("Unable to perform Type action in :"+eleName + " With Data "+testData,
-					MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
+			//StartBrowser.childTest.fail("Unable to perform Type action in :"+eleName + " With Data "+testData,
+			//		MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
 
 
 			throw e;
@@ -112,9 +112,9 @@ public class ActionDriver
 			StartBrowser.childTest.pass("Successfully performed Mousehover on:"+eleName);
 		}
 		catch(Exception e) {
-			String screenshotPath = CommonFunctions.capture(driver, "screenshotForExtetReport");
-			StartBrowser.childTest.fail("Unable to perform Mousehover on :"+eleName,
-					MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
+			//String screenshotPath = CommonFunctions.capture(driver, "screenshotForExtetReport");
+		//	StartBrowser.childTest.fail("Unable to perform Mousehover on :"+eleName,
+			//		MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
 			StartBrowser.childTest.info(e);		
 			throw e;
 		}
