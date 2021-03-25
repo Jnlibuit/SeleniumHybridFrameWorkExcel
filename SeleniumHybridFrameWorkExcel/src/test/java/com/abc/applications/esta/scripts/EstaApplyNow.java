@@ -24,11 +24,11 @@ public class EstaApplyNow extends StartBrowser {
 		  
 		 I94Actions i94a = new I94Actions ();
 		 
-		 String linkurl = cfs.processInput  ("/I94config");
+		 String linkurl = cfs.processInput  ("/estaconfig");
 		 
 		  while(recordset.next()){
 			  
-			  cfs.NavigateToHomePage("https://esta.cbp.dhs.gov/esta");
+			  cfs.NavigateToHomePage(linkurl);
 		 
 			  
 			 //Thread.sleep(9000);

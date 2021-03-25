@@ -50,9 +50,7 @@ public class I94GroupUpload extends StartBrowser{
 
 
 		}
-
-
-		//Thread.sleep(3000);
+		
 	}
 
 }

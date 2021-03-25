@@ -1,4 +1,4 @@
-package com.abc.applications.i94.scripts;
+package com.abc.misc;
 
 import org.testng.annotations.Test;
 

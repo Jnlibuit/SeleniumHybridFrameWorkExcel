@@ -131,11 +131,11 @@ public class CommonFunctions {
 
 		}
 
-		
+
 	}
 	public static String capture(WebDriver driver, String screenshotName) throws IOException 
 	{
-		
+
 		TakesScreenshot ts=(TakesScreenshot) driver;
 
 		File source = ts.getScreenshotAs(OutputType.FILE);
@@ -1220,16 +1220,81 @@ public class CommonFunctions {
 	{
 		//System.out.println("Here inside processInput");
 		//String path = "/I94config";
-		try {
-			prop = new Properties();
-			FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/src/test/java/com/abc/applications/i94"
-					+ (path)+"/config.properties");
+		if (path.equals("/i736config")){
+			//String node = "/estaconfig";
+			//System.out.println("Im heare at 1226");
+			//System.out.println(node);
+			try {
+				prop = new Properties();
 
-			prop.load(ip);
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
+
+				FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/src/test/java/com/abc/applications/i736"
+
+						+ (path)+"/config.properties");
+
+				prop.load(ip);
+			} catch (FileNotFoundException e) {
+				e.printStackTrace();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+
+		if (path.equals("/evusconfig")){
+			
+			try {
+				prop = new Properties();
+
+
+				FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/src/test/java/com/abc/applications/evus"
+
+						+ (path)+"/config.properties");
+
+				prop.load(ip);
+			} catch (FileNotFoundException e) {
+				e.printStackTrace();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+
+		if (path.equals("/estaconfig")){
+			
+			try {
+				prop = new Properties();
+
+
+				FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/src/test/java/com/abc/applications/esta"
+
+						+ (path)+"/config.properties");
+
+				prop.load(ip);
+			} catch (FileNotFoundException e) {
+				e.printStackTrace();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+
+
+
+
+		if (path.equals("/I94config")){
+			
+			try {
+				prop = new Properties();
+
+
+				FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/src/test/java/com/abc/applications/i94"
+
+						+ (path)+"/config.properties");
+
+				prop.load(ip);
+			} catch (FileNotFoundException e) {
+				e.printStackTrace();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 		}
 
 		String urlLink = prop.getProperty("url");
@@ -1240,7 +1305,7 @@ public class CommonFunctions {
 	}
 	public void UploadFile(String filename ) throws Exception
 	{
-		
+
 
 		Thread.sleep(500);
 		//Use robot=new Robot class to upload file
@@ -1251,7 +1316,7 @@ public class CommonFunctions {
 		StringSelection filepath = new StringSelection (filename);
 
 
-	
+
 
 		//Copy above path tom clipboard
 

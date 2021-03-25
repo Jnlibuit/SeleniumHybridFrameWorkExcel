@@ -1,4 +1,4 @@
-package com.abc.utils;
+package com.abc.misc;
 
 import org.testng.annotations.Test;
 

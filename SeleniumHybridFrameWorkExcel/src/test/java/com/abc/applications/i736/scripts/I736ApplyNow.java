@@ -24,11 +24,12 @@ public class I736ApplyNow extends StartBrowser {
 		  
 		 I94Actions i94a = new I94Actions ();
 		 
-		 String linkurl = cfs.processInput  ("/I94config");
+		 String linkurl = cfs.processInput  ("/i736config");
 		 
 		  while(recordset.next()){
 			  
-			  cfs.NavigateToHomePage("https://i736.cbp.dhs.gov/I736/#/home");
+			  cfs.NavigateToHomePage(linkurl);
+			
 			 
 		  
 
