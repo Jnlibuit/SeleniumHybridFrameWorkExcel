@@ -10,6 +10,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -146,6 +147,14 @@ public class CommonFunctions {
 		return dest;
 	}
 
+	public static String decode(String encodedpsw) throws IOException 
+	{
+		byte[] decodedstring=Base64.decodeBase64(encodedpsw);
+		System.out.println("encoded string:"+new String(decodedstring)); 
+		
+
+		return new String(decodedstring);
+	}
 	public static String isoCountrycode(String countryCode) throws IOException 
 	{
 		String countryCd = countryCode;
