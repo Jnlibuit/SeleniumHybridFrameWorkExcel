@@ -1348,11 +1348,11 @@ public class CommonFunctions {
 		Thread.sleep(500);
 
 		//Release V
-		robot.keyPress(KeyEvent.VK_CANCEL);
+		robot.keyPress(KeyEvent.VK_ENTER);
 		Thread.sleep(500);
 
 		//Release CTRL
-		robot.keyRelease(KeyEvent.VK_CANCEL);
+		robot.keyRelease(KeyEvent.VK_ENTER);
 		Thread.sleep(500);
 
 
