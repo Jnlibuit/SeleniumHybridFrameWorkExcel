@@ -76,5 +76,77 @@ public class I94 {
 	
 	public static By btnChooseExcelFile = By.xpath("//input[@id='importApplications']");
 	
-	
+	// New Xpaths
+
+	//Petition Number:
+
+	public static By txtpetitionNumber = By.xpath("//input[@id='petitionNumber']");
+
+	//Sevis Number:
+
+	public static By txtsevisNumber = By.xpath("//input[@id='sevisNumber']");
+
+	//Citizenship Country:
+
+	public static By txtCitizenshipCountry = By.xpath("//input[@id='citizenCountry']");
+
+	//Residence Country:
+
+	public static By txtresidenceCountry = By.xpath("//input[@id='residenceCountry']");
+
+	//Email Address:
+
+	public static By txtemailAddress = By.xpath("//input[@id='travelerEmailAddress']");
+
+	//Verify Email Address:
+
+	public static By txtVerifyEmailAddress = By.xpath("//input[@id='travlerEmailAddressConfirm']");
+
+	//Address In The United States (Line 1):
+
+	public static By txtAddressUnitedStates1 = By.xpath("//input[@id='address1']");
+
+	//Address In The United States (Line 2):
+
+	public static By txtAddressUnitedStates2 = By.xpath("//input[@id='address2']");
+
+	//City:
+
+	public static By txtCity = By.xpath("//input[@id='city']");
+
+	//State:
+
+	public static By txtState = By.xpath("//input[@id='state']");
+
+	//ZIP Code:
+
+	public static By txtzipCode = By.xpath("//input[@id='zipCode']");
+
+	//Phone Number:
+
+	public static By txtPhoneNumber = By.xpath("//input[@id='telephone']");
+
+	//Occupation (Optional):
+
+	public static By txtoccupation = By.xpath("//input[@id='occupation']");
+
+	//Us Contact First Name:
+
+	public static By txtContactFirstName = By.xpath("//input[@id='usContactFirstName']");
+
+	//Us Contact Last Name:
+
+	public static By txtContactLastName = By.xpath("//input[@id='usContactLastName']");
+
+	//Next:
+
+	public static By txtNext = By.xpath("//input[@id='nextSubmit']");
+
+	//Add Another Traveler:
+
+	public static By txtAddAnotherTraveler = By.xpath("//body/div[1]/section/div/div[1]/div[2]/div/div/div/span/form/div[2]/div/a");
+
+	//Submit Payment:
+
+	public static By txtSubmitPayment = By.xpath("//input[@id='paymentSubmit']");
 }

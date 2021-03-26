@@ -62,7 +62,8 @@ public class SendEmailWithAttachment {
 					e.printStackTrace();
 				}
 				
-				return new PasswordAuthentication("nilo@libuit.com", decodedpsw);	
+				return new PasswordAuthentication("nilo@libuit.com", decodedpsw);
+				
 			}
 
 		});
@@ -78,6 +79,10 @@ public class SendEmailWithAttachment {
 			// Set the recipient address
 			message.addRecipients(Message.RecipientType.TO,InternetAddress.parse("nilo.libuit@nolijconsulting.com"));
 			message.addRecipients(Message.RecipientType.TO,InternetAddress.parse("nilo@libuit.com"));
+			message.addRecipients(Message.RecipientType.TO,InternetAddress.parse("wildbill4@comcast.net"));
+			message.addRecipients(Message.RecipientType.TO,InternetAddress.parse("william.allen@associates.cbp.dhs.gov"));
+			message.addRecipients(Message.RecipientType.TO,InternetAddress.parse("kevin.lui@associates.cbp.dhs.gov"));
+			message.addRecipients(Message.RecipientType.TO,InternetAddress.parse("stanley.pauyo@cbp.dhs.gov"));
 			// Add the subject link
 			message.setSubject("Testing Send Email ");
 
@@ -85,7 +90,7 @@ public class SendEmailWithAttachment {
 			BodyPart messageBodyPart1 = new MimeBodyPart();
 
 			// Set the body of email
-			messageBodyPart1.setText("This is message body");
+			messageBodyPart1.setText("This is a sample test report from Selenium Automation Team");
 
 			// Create another object to add another content
 			MimeBodyPart messageBodyPart2 = new MimeBodyPart();

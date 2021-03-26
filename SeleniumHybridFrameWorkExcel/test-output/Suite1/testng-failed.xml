@@ -19,6 +19,7 @@
       </class> <!-- com.abc.applications.EVUS.scripts.EvusApplyNow -->
       <class name="com.abc.applications.i94.scripts.I94GroupUpload">
         <methods>
+          <include name="I94testGroupUpload"/>
           <include name="methodName"/>
           <include name="afterClass"/>
           <include name="beforeClass"/>
@@ -28,7 +29,6 @@
         <methods>
           <include name="methodName"/>
           <include name="afterClass"/>
-          <include name="I94testApplyNow"/>
           <include name="beforeClass"/>
           <include name="generateReport"/>
         </methods>
