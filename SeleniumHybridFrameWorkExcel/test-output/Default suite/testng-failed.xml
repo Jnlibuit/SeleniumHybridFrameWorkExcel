@@ -3,15 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.abc.misc.I94ApplyNowNilo">
+      <class name="com.abc.misc.SendEmailWithAttachment">
         <methods>
-          <include name="methodName"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="generateReport"/>
-          <include name="testI94ApplyNow"/>
+          <include name="testSendEmailWithAttachment"/>
         </methods>
-      </class> <!-- com.abc.misc.I94ApplyNowNilo -->
+      </class> <!-- com.abc.misc.SendEmailWithAttachment -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,144 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite1" duration-ms="54948" started-at="2021-03-29T06:19:09Z" finished-at="2021-03-29T06:20:04Z">
+  <suite name="Default suite" duration-ms="5394" started-at="2021-03-29T12:35:14Z" finished-at="2021-03-29T12:35:19Z">
     <groups>
     </groups>
-    <test name="Nopackage" duration-ms="54948" started-at="2021-03-29T06:19:09Z" finished-at="2021-03-29T06:20:04Z">
-      <class name="com.abc.applications.i94.scripts.I94ApplyNow">
-        <test-method status="PASS" signature="generateReport()[pri:0, instance:com.abc.applications.i94.scripts.I94ApplyNow@49c386c8]" name="generateReport" is-config="true" duration-ms="261" started-at="2021-03-29T02:19:09Z" finished-at="2021-03-29T02:19:09Z">
+    <test name="Default test" duration-ms="5394" started-at="2021-03-29T12:35:14Z" finished-at="2021-03-29T12:35:19Z">
+      <class name="com.abc.misc.SendEmailWithAttachment">
+        <test-method status="PASS" signature="testSendEmailWithAttachment()[pri:0, instance:com.abc.misc.SendEmailWithAttachment@77cd7a0]" name="testSendEmailWithAttachment" duration-ms="5363" started-at="2021-03-29T08:35:14Z" finished-at="2021-03-29T08:35:19Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- generateReport -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.abc.applications.i94.scripts.I94ApplyNow@49c386c8]" name="beforeClass" is-config="true" duration-ms="2358" started-at="2021-03-29T02:19:09Z" finished-at="2021-03-29T02:19:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="methodName(java.lang.reflect.Method)[pri:0, instance:com.abc.applications.i94.scripts.I94ApplyNow@49c386c8]" name="methodName" is-config="true" duration-ms="27" started-at="2021-03-29T02:19:12Z" finished-at="2021-03-29T02:19:12Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.abc.applications.i94.scripts.I94ApplyNow.I94testApplyNow() throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- methodName -->
-        <test-method status="PASS" signature="I94testApplyNow()[pri:0, instance:com.abc.applications.i94.scripts.I94ApplyNow@49c386c8]" name="I94testApplyNow" duration-ms="11065" started-at="2021-03-29T02:19:12Z" finished-at="2021-03-29T02:19:23Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- I94testApplyNow -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.abc.applications.i94.scripts.I94ApplyNow@49c386c8]" name="afterClass" is-config="true" duration-ms="955" started-at="2021-03-29T02:19:23Z" finished-at="2021-03-29T02:19:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.abc.applications.i94.scripts.I94ApplyNow@49c386c8]" name="afterTest" is-config="true" duration-ms="1030" started-at="2021-03-29T02:20:03Z" finished-at="2021-03-29T02:20:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- com.abc.applications.i94.scripts.I94ApplyNow -->
-      <class name="com.abc.applications.esta.scripts.EstaApplyNow">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.abc.applications.esta.scripts.EstaApplyNow@6e0dec4a]" name="beforeClass" is-config="true" duration-ms="1351" started-at="2021-03-29T02:19:42Z" finished-at="2021-03-29T02:19:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="methodName(java.lang.reflect.Method)[pri:0, instance:com.abc.applications.esta.scripts.EstaApplyNow@6e0dec4a]" name="methodName" is-config="true" duration-ms="1" started-at="2021-03-29T02:19:43Z" finished-at="2021-03-29T02:19:43Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.abc.applications.esta.scripts.EstaApplyNow.estaApplyNow() throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- methodName -->
-        <test-method status="PASS" signature="estaApplyNow()[pri:0, instance:com.abc.applications.esta.scripts.EstaApplyNow@6e0dec4a]" name="estaApplyNow" duration-ms="5106" started-at="2021-03-29T02:19:43Z" finished-at="2021-03-29T02:19:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- estaApplyNow -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.abc.applications.esta.scripts.EstaApplyNow@6e0dec4a]" name="afterClass" is-config="true" duration-ms="1001" started-at="2021-03-29T02:19:48Z" finished-at="2021-03-29T02:19:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.abc.applications.esta.scripts.EstaApplyNow -->
-      <class name="com.abc.applications.i94.scripts.I94GroupUpload">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.abc.applications.i94.scripts.I94GroupUpload@56528192]" name="beforeClass" is-config="true" duration-ms="1358" started-at="2021-03-29T02:19:24Z" finished-at="2021-03-29T02:19:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="methodName(java.lang.reflect.Method)[pri:0, instance:com.abc.applications.i94.scripts.I94GroupUpload@56528192]" name="methodName" is-config="true" duration-ms="1" started-at="2021-03-29T02:19:25Z" finished-at="2021-03-29T02:19:25Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.abc.applications.i94.scripts.I94GroupUpload.I94testGroupUpload() throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- methodName -->
-        <test-method status="PASS" signature="I94testGroupUpload()[pri:0, instance:com.abc.applications.i94.scripts.I94GroupUpload@56528192]" name="I94testGroupUpload" duration-ms="15546" started-at="2021-03-29T02:19:25Z" finished-at="2021-03-29T02:19:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- I94testGroupUpload -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.abc.applications.i94.scripts.I94GroupUpload@56528192]" name="afterClass" is-config="true" duration-ms="969" started-at="2021-03-29T02:19:41Z" finished-at="2021-03-29T02:19:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.abc.applications.i94.scripts.I94GroupUpload -->
-      <class name="com.abc.applications.i736.scripts.I736ApplyNow">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.abc.applications.i736.scripts.I736ApplyNow@5ccddd20]" name="beforeClass" is-config="true" duration-ms="1375" started-at="2021-03-29T02:19:56Z" finished-at="2021-03-29T02:19:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="i736ApplyNow()[pri:0, instance:com.abc.applications.i736.scripts.I736ApplyNow@5ccddd20]" name="i736ApplyNow" duration-ms="4591" started-at="2021-03-29T02:19:57Z" finished-at="2021-03-29T02:20:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- i736ApplyNow -->
-        <test-method status="PASS" signature="methodName(java.lang.reflect.Method)[pri:0, instance:com.abc.applications.i736.scripts.I736ApplyNow@5ccddd20]" name="methodName" is-config="true" duration-ms="0" started-at="2021-03-29T02:19:57Z" finished-at="2021-03-29T02:19:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.abc.applications.i736.scripts.I736ApplyNow.i736ApplyNow() throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- methodName -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.abc.applications.i736.scripts.I736ApplyNow@5ccddd20]" name="afterClass" is-config="true" duration-ms="956" started-at="2021-03-29T02:20:02Z" finished-at="2021-03-29T02:20:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.abc.applications.i736.scripts.I736ApplyNow -->
-      <class name="com.abc.applications.EVUS.scripts.EvusApplyNow">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.abc.applications.EVUS.scripts.EvusApplyNow@96def03]" name="beforeClass" is-config="true" duration-ms="1360" started-at="2021-03-29T02:19:49Z" finished-at="2021-03-29T02:19:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="methodName(java.lang.reflect.Method)[pri:0, instance:com.abc.applications.EVUS.scripts.EvusApplyNow@96def03]" name="methodName" is-config="true" duration-ms="1" started-at="2021-03-29T02:19:50Z" finished-at="2021-03-29T02:19:50Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.abc.applications.EVUS.scripts.EvusApplyNow.evusApplyNow() throws java.lang.Exception]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- methodName -->
-        <test-method status="PASS" signature="evusApplyNow()[pri:0, instance:com.abc.applications.EVUS.scripts.EvusApplyNow@96def03]" name="evusApplyNow" duration-ms="4699" started-at="2021-03-29T02:19:50Z" finished-at="2021-03-29T02:19:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- evusApplyNow -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.abc.applications.EVUS.scripts.EvusApplyNow@96def03]" name="afterClass" is-config="true" duration-ms="889" started-at="2021-03-29T02:19:55Z" finished-at="2021-03-29T02:19:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.abc.applications.EVUS.scripts.EvusApplyNow -->
-    </test> <!-- Nopackage -->
-  </suite> <!-- Suite1 -->
+        </test-method> <!-- testSendEmailWithAttachment -->
+      </class> <!-- com.abc.misc.SendEmailWithAttachment -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -81,8 +81,8 @@ public class SendEmailWithAttachment {
 			message.addRecipients(Message.RecipientType.TO,InternetAddress.parse("nilo@libuit.com"));
 			message.addRecipients(Message.RecipientType.TO,InternetAddress.parse("wildbill4@comcast.net"));
 			message.addRecipients(Message.RecipientType.TO,InternetAddress.parse("william.allen@associates.cbp.dhs.gov"));
-			message.addRecipients(Message.RecipientType.TO,InternetAddress.parse("kevin.lui@associates.cbp.dhs.gov"));
-			message.addRecipients(Message.RecipientType.TO,InternetAddress.parse("stanley.pauyo@cbp.dhs.gov"));
+			//message.addRecipients(Message.RecipientType.TO,InternetAddress.parse("kevin.lui@associates.cbp.dhs.gov"));
+			//message.addRecipients(Message.RecipientType.TO,InternetAddress.parse("stanley.pauyo@cbp.dhs.gov"));
 			// Add the subject link
 			message.setSubject("Testing Send Email ");
 
@@ -96,7 +96,7 @@ public class SendEmailWithAttachment {
 			MimeBodyPart messageBodyPart2 = new MimeBodyPart();
 
 			// Mention the file which you want to send
-			String filename = "C:\\Users\\nlibu\\git\\SeleniumHybridFrameWorkExcel\\SeleniumHybridFrameWorkExcel\\Reports\\AutomationReport.html";
+			String filename = "C:\\Users\\nlibu\\git\\SeleniumHybridFrameWorkExcel\\SeleniumHybridFrameWorkExcel\\target\\index.html";
 
 			// Create data source and pass the filename
 			DataSource source = new FileDataSource(filename);
