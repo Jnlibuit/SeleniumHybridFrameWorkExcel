@@ -30,8 +30,8 @@ public class I94Actions {
 		 * Populate Report Test Case Name
 		 */
 		StartBrowser.childTest = StartBrowser.parentTest.createNode( "Apply Now").assignAuthor("Scott William").assignCategory("Regression Test");  
-		
-		
+
+
 		/**
 		 * Click lnk/btns/rbtn
 		 */
@@ -62,7 +62,7 @@ public class I94Actions {
 		 * Click   btpassport  
 		 */
 		aDriver.click(com.abc.applications.i94.or.I94.rbtpassport, "Passport");
-		
+
 		/**
 		 * Type   txtPassportNumber  
 		 */
@@ -98,7 +98,7 @@ public class I94Actions {
 		/**
 		 * Print Last Page
 		 */
-		cfs.screenPrint();
+		//cfs.screenPrint();
 
 		//Thread.sleep(2000);
 	}
@@ -119,7 +119,7 @@ public class I94Actions {
 		aDriver.click(com.abc.applications.i94.or.I94.lnkApplyNow, "Apply Now");
 		aDriver.click(com.abc.applications.i94.or.I94.btnConsentContinue, "Consent & Continue");
 		aDriver.click(com.abc.applications.i94.or.I94.rbtnviaalandborder, "via a land border");
-		
+
 		/**
 		 * Type
 		 */
@@ -133,7 +133,7 @@ public class I94Actions {
 
 		cfs.Gender(Gender);
 		String countryName = cfs.isoCountrycode(passportCountry);
-		
+
 		aDriver.click(com.abc.applications.i94.or.I94.rbtpassport, "Passport");
 		aDriver.type(com.abc.applications.i94.or.I94.txtPassportNumber, documentNumber, "Document Number");
 		aDriver.type(com.abc.applications.i94.or.I94.txtPassportCountry, countryName, "Passport Country of Issue");
@@ -154,19 +154,19 @@ public class I94Actions {
 		 * Populate Report Test Case Name
 		 */
 		StartBrowser.childTest = StartBrowser.parentTest.createNode( "Group Upload").assignAuthor("NiloLibuit").assignCategory("Regression Test");
-		
+
 		/**
 		 * Click lnk,btn and type data
 		 */
 		aDriver.click(com.abc.applications.i94.or.I94.lnkAppForNewI94, "Apply For New I-94 Link");
 		aDriver.click(com.abc.applications.i94.or.I94.lnkGroupUpload, "Group Upload");
 		aDriver.click(com.abc.applications.i94.or.I94.btnConsentContinue, "Consent & Continue");
-		
+
 		aDriver.type(com.abc.applications.i94.or.I94.txtGroupFirstName, firstName, "First Name");
 		aDriver.type(com.abc.applications.i94.or.I94.txtGroupLastName, lastName, "Last Name");
 		aDriver.type(com.abc.applications.i94.or.I94.txtGroupEmailAddress, emailAddress, "Email Address");
 		aDriver.type(com.abc.applications.i94.or.I94.txtGroupConfirmEmailAddress, emailAddress, "Confirm Email Address");
-		
+
 		aDriver.click(com.abc.applications.i94.or.I94.btnSubmit, "Submit");
 		aDriver.click(com.abc.applications.i94.or.I94.btnCreateGroup, "YES, CREATE A GROUP");
 		aDriver.click(com.abc.applications.i94.or.I94.btnChooseExcelFile, "CHOOSE EXCEL FILE");
@@ -179,8 +179,11 @@ public class I94Actions {
 		/**
 		 * Call Function to get a screenshot
 		 */
-		cfs.screenPrint();
-		
+
+		//cfs.screenPrint();
+
+
+
 
 		Thread.sleep(2000);
 	}
