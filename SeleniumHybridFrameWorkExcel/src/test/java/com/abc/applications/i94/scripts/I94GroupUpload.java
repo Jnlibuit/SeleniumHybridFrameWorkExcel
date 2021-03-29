@@ -14,7 +14,8 @@ import com.codoid.products.fillo.Recordset;
 
 
 public class I94GroupUpload extends StartBrowser{
-	@Test
+	
+	@Test(retryAnalyzer =  com.abc.misc.RetryAnalyzer.class) 
 	public void I94testGroupUpload() throws Exception 
 	{
 		/**

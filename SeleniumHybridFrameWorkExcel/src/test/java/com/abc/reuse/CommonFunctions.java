@@ -18,7 +18,7 @@ import org.openqa.selenium.WebDriver;
 
 import com.abc.config.StartBrowser;
 import com.abc.wdcmds.ActionDriver;
-import com.aventstack.extentreports.MediaEntityBuilder; 
+import com.aventstack.extentreports.MediaEntityBuilder;
 
 
 public class CommonFunctions {
@@ -57,6 +57,13 @@ public class CommonFunctions {
 
 
 		//Thread.sleep(1000);
+	}
+	
+
+	
+	public String getBase64(){
+		return ((TakesScreenshot)driver).getScreenshotAs(OutputType.BASE64);
+	
 	}
 	public static String[] DateSplit(String date) throws Exception
 	{
@@ -1220,9 +1227,9 @@ public class CommonFunctions {
 	}
 	public void screenPrint() throws IOException 
 	{
-		String screenshotPath = CommonFunctions.capture(driver, "screenshotForExtetReport");
-		StartBrowser.childTest.pass("Print Last Page",
-				MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
+		//String screenshotPath = CommonFunctions.capture(driver, "screenshotForExtetReport");
+		StartBrowser.childTest.pass("Successfully printed the page",
+				MediaEntityBuilder.createScreenCaptureFromBase64String(getBase64()).build());
 	}
 
 	public static String processInput(String path) throws IOException 

@@ -9,9 +9,10 @@ import com.codoid.products.fillo.Connection;
 import com.codoid.products.fillo.Fillo;
 import com.codoid.products.fillo.Recordset;
 
-public class I94ApplyNow extends StartBrowser {
-	@Test
 
+public class I94ApplyNow extends StartBrowser {
+	
+	@Test(retryAnalyzer =  com.abc.misc.RetryAnalyzer.class) 
 	public void I94testApplyNow() throws Exception 
 	{
 		/**

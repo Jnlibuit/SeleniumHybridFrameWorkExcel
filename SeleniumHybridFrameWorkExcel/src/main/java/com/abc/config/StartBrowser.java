@@ -1,6 +1,10 @@
 package com.abc.config;
 
+import java.awt.Desktop;
+import java.io.File;
+import java.io.IOException;
 import java.lang.reflect.Method;
+import java.util.Objects;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -9,6 +13,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
@@ -17,7 +22,9 @@ import org.testng.annotations.Test;
 import com.abc.reuse.CommonFunctions;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -27,7 +34,7 @@ public class StartBrowser {
 	public static ExtentReports extent;
 	public static ExtentTest parentTest;
 	public static ExtentTest childTest;
-	ExtentHtmlReporter htmlreporter;
+	ExtentSparkReporter  extentSparkReporter ;
 	String method;
 
 	@BeforeClass
@@ -43,11 +50,15 @@ public class StartBrowser {
 
 	@BeforeTest
 	public void generateReport()
-	{
-		htmlreporter = new ExtentHtmlReporter("Reports/AutomationReport.html");
+	{if(Objects.isNull(extent)){
+		//ExtentSparkReporter spark = new ExtentSparkReporter("Reports/AutomationReport.html");
+		ExtentSparkReporter spark = new ExtentSparkReporter("target/index.html");
 		extent = new ExtentReports();
-		extent.attachReporter(htmlreporter); 
-
+		extent.attachReporter(spark); 
+		spark.config().setTheme(Theme.DARK);
+		spark.config().setDocumentTitle("TASS - PSPD Automation Report");
+		spark.config().setReportName("PSPD Automation Test Suite");
+	}
 	}
 
 
@@ -58,8 +69,15 @@ public class StartBrowser {
 	@AfterClass
 	public void afterClass() {
 		driver.quit();
-		extent.flush();
+		//extent.flush();
 	}
+	@AfterTest
 
+	public void  afterTest() throws IOException{
+		if(Objects.nonNull(extent)){
+			extent.flush();
+			Desktop.getDesktop().browse(new File("target/index.html").toURI());	
+		}
+	}
 
 }

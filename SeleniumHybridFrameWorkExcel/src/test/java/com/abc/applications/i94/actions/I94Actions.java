@@ -29,7 +29,7 @@ public class I94Actions {
 		/**
 		 * Populate Report Test Case Name
 		 */
-		StartBrowser.childTest = StartBrowser.parentTest.createNode( "Apply Now");
+		StartBrowser.childTest = StartBrowser.parentTest.createNode( "Apply Now").assignAuthor("Scott William").assignCategory("Regression Test");  
 		
 		
 		/**
@@ -153,7 +153,7 @@ public class I94Actions {
 		/**
 		 * Populate Report Test Case Name
 		 */
-		StartBrowser.childTest = StartBrowser.parentTest.createNode( "Group Upload");
+		StartBrowser.childTest = StartBrowser.parentTest.createNode( "Group Upload").assignAuthor("NiloLibuit").assignCategory("Regression Test");
 		
 		/**
 		 * Click lnk,btn and type data
