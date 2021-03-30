@@ -12,6 +12,7 @@ import java.util.Properties;
 
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -47,7 +48,6 @@ public class CommonFunctions {
 		aDriver.click(com.abc.applications.sample.objectrepository.SigninPage.btnSignIn, "Sign-In button");
 		Thread.sleep(2000);
 	}
-
 	public void AccountMenu() throws Exception
 	{
 		StartBrowser.childTest = StartBrowser.parentTest.createNode( "However to Account Menu");
@@ -58,12 +58,31 @@ public class CommonFunctions {
 
 		//Thread.sleep(1000);
 	}
-	
+	public void ScrollUp() throws Exception
+	{
+		//StartBrowser.childTest = StartBrowser.parentTest.createNode( "However to Account Menu");
+		//aDriver.mouseHover(com.abc.applications.sample.objectrepository.HomePage.lnkAccount, "Account Menu");
 
-	
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("window.scrollBy(0,-400)");
+
+		//Thread.sleep(1000);
+	}
+	public void ScrollDown() throws Exception
+	{
+		//StartBrowser.childTest = StartBrowser.parentTest.createNode( "However to Account Menu");
+		//aDriver.mouseHover(com.abc.applications.sample.objectrepository.HomePage.lnkAccount, "Account Menu");
+
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		js.executeScript("window.scrollBy(0,500)");
+
+		//Thread.sleep(1000);
+	}
+
+
 	public String getBase64(){
 		return ((TakesScreenshot)driver).getScreenshotAs(OutputType.BASE64);
-	
+
 	}
 	public static String[] DateSplit(String date) throws Exception
 	{
@@ -158,7 +177,7 @@ public class CommonFunctions {
 	{
 		byte[] decodedstring=Base64.decodeBase64(encodedpsw);
 		System.out.println("encoded string:"+new String(decodedstring)); 
-		
+
 
 		return new String(decodedstring);
 	}
@@ -1232,92 +1251,94 @@ public class CommonFunctions {
 				MediaEntityBuilder.createScreenCaptureFromBase64String(getBase64()).build());
 	}
 
-	public static String processInput(String path) throws IOException 
-	{
-		//System.out.println("Here inside processInput");
-		//String path = "/I94config";
-		if (path.equals("/i736config")){
-			//String node = "/estaconfig";
-			//System.out.println("Im heare at 1226");
-			//System.out.println(node);
-			try {
-				prop = new Properties();
+	public static String getuploadfile(String path) throws IOException 
+	{	System.out.println("Upload path is :");
+		System.out.println(path);
+	//System.out.println("Here inside processInput");
+	//String path = "/I94config";
+	if (path.equals("/i736config")){
+		//String node = "/estaconfig";
+		//System.out.println("Im heare at 1226");
+		//System.out.println(node);
+		try {
+			prop = new Properties();
 
 
-				FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/src/test/java/com/abc/applications/i736"
-
-						+ (path)+"/config.properties");
-
-				prop.load(ip);
-			} catch (FileNotFoundException e) {
-				e.printStackTrace();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-		}
-
-		if (path.equals("/evusconfig")){
-			
-			try {
-				prop = new Properties();
-
-
-				FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/src/test/java/com/abc/applications/evus"
+			FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/src/test/java/com/abc/applications/i736"
 
 						+ (path)+"/config.properties");
 
-				prop.load(ip);
-			} catch (FileNotFoundException e) {
-				e.printStackTrace();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
+			prop.load(ip);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
+	}
 
-		if (path.equals("/estaconfig")){
-			
-			try {
-				prop = new Properties();
+	if (path.equals("/evusconfig")){
+
+		try {
+			prop = new Properties();
 
 
-				FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/src/test/java/com/abc/applications/esta"
+			FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/src/test/java/com/abc/applications/evus"
 
 						+ (path)+"/config.properties");
 
-				prop.load(ip);
-			} catch (FileNotFoundException e) {
-				e.printStackTrace();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
+			prop.load(ip);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
+	}
+
+	if (path.equals("/estaconfig")){
+
+		try {
+			prop = new Properties();
 
 
-
-
-		if (path.equals("/I94config")){
-			
-			try {
-				prop = new Properties();
-
-
-				FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/src/test/java/com/abc/applications/i94"
+			FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/src/test/java/com/abc/applications/esta"
 
 						+ (path)+"/config.properties");
 
-				prop.load(ip);
-			} catch (FileNotFoundException e) {
-				e.printStackTrace();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
+			prop.load(ip);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
+	}
 
-		String urlLink = prop.getProperty("url");
-		//System.out.println("Url link");
-		//System.out.println(urlLink);
 
-		return urlLink;
+
+
+	if (path.equals("/I94config")){
+
+		System.out.println("*** Im here at I94config ***");
+		try {
+			prop = new Properties();
+
+
+			FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/src/test/java/com/abc/applications/i94"
+
+						+ (path)+"/config.properties");
+
+			prop.load(ip);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	String uploadFile = prop.getProperty("uploadfile");
+	System.out.println("Value of upload file is:");
+	System.out.println(uploadFile);
+
+	return uploadFile;
 	}
 	public void UploadFile(String filename ) throws Exception
 	{
@@ -1366,5 +1387,93 @@ public class CommonFunctions {
 
 
 		//Thread.sleep(1000);
+	}
+
+	public static String geturl(String path) throws IOException 
+	{
+		//System.out.println("Here inside processInput");
+		//String path = "/I94config";
+		if (path.equals("/i736config")){
+			//String node = "/estaconfig";
+			//System.out.println("Im heare at 1226");
+			//System.out.println(node);
+			try {
+				prop = new Properties();
+
+
+				FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/src/test/java/com/abc/applications/i736"
+
+						+ (path)+"/config.properties");
+
+				prop.load(ip);
+			} catch (FileNotFoundException e) {
+				e.printStackTrace();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+
+		if (path.equals("/evusconfig")){
+
+			try {
+				prop = new Properties();
+
+
+				FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/src/test/java/com/abc/applications/evus"
+
+						+ (path)+"/config.properties");
+
+				prop.load(ip);
+			} catch (FileNotFoundException e) {
+				e.printStackTrace();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+
+		if (path.equals("/estaconfig")){
+
+			try {
+				prop = new Properties();
+
+
+				FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/src/test/java/com/abc/applications/esta"
+
+						+ (path)+"/config.properties");
+
+				prop.load(ip);
+			} catch (FileNotFoundException e) {
+				e.printStackTrace();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+
+
+
+
+		if (path.equals("/I94config")){
+
+			try {
+				prop = new Properties();
+
+
+				FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/src/test/java/com/abc/applications/i94"
+
+						+ (path)+"/config.properties");
+
+				prop.load(ip);
+			} catch (FileNotFoundException e) {
+				e.printStackTrace();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+
+		String urlLink = prop.getProperty("url");
+		//System.out.println("Url link");
+		//System.out.println(urlLink);
+
+		return urlLink;
 	}
 }

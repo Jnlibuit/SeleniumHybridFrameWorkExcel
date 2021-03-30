@@ -24,7 +24,7 @@ public class EstaApplyNow extends StartBrowser {
 		  
 		 I94Actions i94a = new I94Actions ();
 		 
-		 String linkurl = cfs.processInput  ("/estaconfig");
+		 String linkurl = cfs.geturl  ("/estaconfig");
 		 
 		  while(recordset.next()){
 			  

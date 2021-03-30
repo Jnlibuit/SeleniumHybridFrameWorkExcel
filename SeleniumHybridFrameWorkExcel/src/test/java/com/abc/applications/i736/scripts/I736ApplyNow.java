@@ -24,7 +24,7 @@ public class I736ApplyNow extends StartBrowser {
 		  
 		 I94Actions i94a = new I94Actions ();
 		 
-		 String linkurl = cfs.processInput  ("/i736config");
+		 String linkurl = cfs.geturl  ("/i736config");
 		 
 		  while(recordset.next()){
 			  

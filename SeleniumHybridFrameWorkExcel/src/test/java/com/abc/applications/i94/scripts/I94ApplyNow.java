@@ -27,7 +27,7 @@ public class I94ApplyNow extends StartBrowser {
 		/**
 		 * Get Config Properties
 		 */
-		String linkurl = cfs.processInput  ("/I94config");
+		String linkurl = cfs.geturl  ("/I94config");
 		
 		/**
 		 * Establish Excel File Connection

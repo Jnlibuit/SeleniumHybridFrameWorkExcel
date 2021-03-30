@@ -24,7 +24,7 @@ public class I94ApplyNowNilo extends StartBrowser {
 		 CommonFunctions cfs = new CommonFunctions();
 		 
 		 I94Actions i94a = new I94Actions ();
-		 String linkurl = cfs.processInput  ("/I94config");
+		 String linkurl = cfs.geturl  ("/I94config");
 		 
 	 
 		  while(recordset.next()){

@@ -170,17 +170,29 @@ public class I94Actions {
 		aDriver.click(com.abc.applications.i94.or.I94.btnSubmit, "Submit");
 		aDriver.click(com.abc.applications.i94.or.I94.btnCreateGroup, "YES, CREATE A GROUP");
 		aDriver.click(com.abc.applications.i94.or.I94.btnChooseExcelFile, "CHOOSE EXCEL FILE");
+		/**
+		 * Call Funtion to get upload file name
+		 */
+		String uploadfileName = cfs.getuploadfile("/I94config");
+
 
 		/**
 		 * Call Function to UploadFile
 		 */
-		cfs.UploadFile("C:\\Users\\nlibu\\git\\SeleniumHybridFrameWorkExcel\\SeleniumHybridFrameWorkExcel\\TestData\\I94-File-Upload-Template_v0311.xlsx");
+		//cfs.UploadFile(uploadfileName);
+		System.out.println("Upload File Name is: ");
+		System.out.println(uploadfileName);
+		//cfs.UploadFile("C:\\Users\\nlibu\\git\\SeleniumHybridFrameWorkExcel\\SeleniumHybridFrameWorkExcel\\TestData\\I94-File-Upload-Template_Original.xls");
+		cfs.UploadFile(uploadfileName);
 
+		aDriver.click(com.abc.applications.i94.or.I94.btnSubmitProcessFile, "Select Submit to Process the file");
+
+		//aDriver.click(com.abc.applications.i94.or.I94.btnSubmitProcessFile, "Select Submit to Process the file");
 		/**
 		 * Call Function to get a screenshot
 		 */
-
-		//cfs.screenPrint();
+		cfs.ScrollDown(); 
+		cfs.screenPrint();
 
 
 

@@ -28,7 +28,7 @@ public class I94GroupUpload extends StartBrowser{
 		/**
 		 * Get Config Properties
 		 */
-		String linkurl = cfs.processInput  ("/I94config");
+		String linkurl = cfs.geturl  ("/I94config");
 
 		/**
 		 * Establish Excel File Connection
@@ -49,7 +49,10 @@ public class I94GroupUpload extends StartBrowser{
 
 			i94a.GroupUpload(recordset.getField("First Name"),recordset.getField("Last Name"),recordset.getField("Email Address"));
 
-
+			
+			
+			
+			
 		}
 		
 	}

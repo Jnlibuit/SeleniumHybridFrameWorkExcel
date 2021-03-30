@@ -23,7 +23,7 @@ public class EvusApplyNow extends StartBrowser {
 		CommonFunctions cfs = new CommonFunctions();
 
 		I94Actions i94a = new I94Actions ();
-		String linkurl = cfs.processInput  ("/evusconfig");
+		String linkurl = cfs.geturl  ("/evusconfig");
 
 		while(recordset.next()){
 

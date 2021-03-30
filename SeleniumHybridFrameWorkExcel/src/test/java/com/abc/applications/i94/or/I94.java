@@ -76,6 +76,8 @@ public class I94 {
 	
 	public static By btnChooseExcelFile = By.xpath("//input[@id='importApplications']");
 	
+	public static By btnSubmitProcessFile = By.xpath("//input[@id='submitToProcess']");
+	
 	// New Xpaths
 
 	//Petition Number:
