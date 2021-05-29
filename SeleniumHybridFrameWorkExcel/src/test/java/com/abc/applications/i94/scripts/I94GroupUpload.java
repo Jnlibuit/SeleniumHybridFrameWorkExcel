@@ -14,7 +14,7 @@ import com.codoid.products.fillo.Recordset;
 
 
 public class I94GroupUpload extends StartBrowser{
-	
+	public int reccnt = 0;
 	@Test(retryAnalyzer =  com.abc.misc.RetryAnalyzer.class) 
 	public void I94testGroupUpload() throws Exception 
 	{
@@ -33,6 +33,9 @@ public class I94GroupUpload extends StartBrowser{
 		/**
 		 * Establish Excel File Connection
 		 */
+		
+		
+		
 		Fillo g = new Fillo();
 
 		Connection con = (Connection) g.getConnection("TestData/I94-File-Upload-Template_v0311.xlsx");
@@ -42,7 +45,7 @@ public class I94GroupUpload extends StartBrowser{
 		/**
 		 * Test Script
 		 */
-
+		
 		while(recordset.next()){
 
 			cfs.NavigateToHomePage(linkurl);
@@ -54,7 +57,7 @@ public class I94GroupUpload extends StartBrowser{
 			
 			
 		}
-		
+		//Thread.sleep(120000);
 	}
 
 }

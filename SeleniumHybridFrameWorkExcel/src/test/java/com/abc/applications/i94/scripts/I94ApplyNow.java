@@ -48,7 +48,7 @@ public class I94ApplyNow extends StartBrowser {
 
 
 			i94a.ApplyNow(recordset.getField("First Name"),recordset.getField("Last Name"),recordset.getField("Birth Date"),recordset.getField("Gender"),recordset.getField("Document Number"),recordset.getField("Passport Country of Issue"),recordset.getField("Passport Issue Date"),recordset.getField("Passport Expiration Date"),recordset.getField("Visa Country of Issuance"),recordset.getField("Visa Number"),recordset.getField("Visa Issue Date"));
-			
+			Thread.sleep(20000);
 		}
 		
 	}

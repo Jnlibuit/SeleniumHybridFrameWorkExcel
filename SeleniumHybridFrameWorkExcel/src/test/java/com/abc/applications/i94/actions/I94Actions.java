@@ -2,6 +2,7 @@ package com.abc.applications.i94.actions;
 
 import org.openqa.selenium.WebDriver;
 
+import com.abc.applications.i94.scripts.I94GroupUpload;
 import com.abc.config.StartBrowser;
 import com.abc.reuse.CommonFunctions;
 import com.abc.wdcmds.ActionDriver;
@@ -12,7 +13,7 @@ public class I94Actions {
 
 	public WebDriver driver;
 	public ActionDriver aDriver;
-
+	
 	public I94Actions()
 	{
 		driver = StartBrowser.driver;
@@ -20,7 +21,11 @@ public class I94Actions {
 	}
 
 	public void ApplyNow(String firstName,String lastName,String birth,String Gender,String documentNumber,String passportCountry,String passportIssue,String expiration,String visaCountry,String visaNumber,String visaIssueDate) throws Exception
-	{
+	{System.out.println("First Name is");
+		String name = firstName;
+		System.out.println(name);
+		
+		
 		/**
 		 * Establish reference to Common Functions
 		 */
@@ -149,7 +154,14 @@ public class I94Actions {
 		 * Establish reference to Common Functions
 		 */
 		CommonFunctions cfs = new CommonFunctions();
-
+		I94GroupUpload cfs2 = new I94GroupUpload();
+		cfs2.reccnt = cfs2.reccnt +1; 
+		
+		if (firstName  != null ){
+			System.out.println(firstName);
+		}
+		System.out.println("Record Count");
+		System.out.println(cfs2.reccnt);
 		/**
 		 * Populate Report Test Case Name
 		 */
@@ -191,12 +203,15 @@ public class I94Actions {
 		/**
 		 * Call Function to get a screenshot
 		 */
-		cfs.ScrollDown(); 
+		String textProblem=ActionDriver.getText(com.abc.applications.i94.or.I94.msgUploadFilewarning);
+		StartBrowser.childTest.warning("Verification done successfully on an invalid Upload File");
+		System.out.println(textProblem);
+		//cfs.ScrollDown(); 
 		cfs.screenPrint();
 
 
 
 
-		Thread.sleep(2000);
+		Thread.sleep(9000);
 	}
 }

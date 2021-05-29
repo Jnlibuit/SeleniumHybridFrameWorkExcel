@@ -78,6 +78,9 @@ public class I94 {
 	
 	public static By btnSubmitProcessFile = By.xpath("//input[@id='submitToProcess']");
 	
+	public static By msgUploadFilewarning = By.xpath("//body/div[1]/section[1]/div[1]/div[1]/div[2]/form[1]/div[1]/div[1]/div[1]/span[1]/div[1]/div[1]");
+	
+	
 	// New Xpaths
 
 	//Petition Number:
